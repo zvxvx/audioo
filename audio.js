@@ -20,13 +20,54 @@ let volumeControl = (audio, volume) => {
     });
 };
 
+//? generates volume control for each sound
+let volumeGenerator = (volume) => {
+    volume.type = 'range';
+    volume.min = '0';
+    volume.max = '1';
+    volume.step = '0.01';
+    volume.value = '1';
+    volume.id ="volume";
+}
+//? container generator
+let containerGenerator = (container, className, button, volume) => {
+    container.classList.toggle(className);
+    container.appendChild(button);
+    container.appendChild(volume);
+}
+
+//? variable storage
+const containers = document.querySelector('.containers')
+const containerOne = document.createElement('div');
+const containerTwo = document.createElement('div');
+const containerThree = document.createElement('div');
+const buttonOne = document.createElement('button');
+const volumeOne = document.createElement('input');
+const buttonTwo = document.createElement('button');
+const volumeTwo = document.createElement('input');
+const buttonThree = document.createElement("button");
+const volumeThree = document.createElement("input");
+
+//? volume control storage
+volumeGenerator(volumeOne);
+volumeGenerator(volumeTwo);
+volumeGenerator(volumeThree);
+
+//? append storage
+containerGenerator(containerOne, "containerOne", buttonOne, volumeOne);
+containers.appendChild(containerOne);
+containerGenerator(containerTwo, "containerTwo", buttonTwo, volumeTwo);
+containers.appendChild(containerOne);
+containerGenerator(containerThree, "containerThree", buttonThree, volumeThree);
+containers.appendChild(containerOne);
+containers.appendChild(containerTwo);
+containers.appendChild(containerThree);
+
 //? audio 1 start
 const one = new Howl({
     src: ["./audio/one.ogg"],
     loop: true,
 });
-const volumeOne = document.getElementById("volumeOne");
-const buttonOne = document.getElementById("buttonOne");
 playPause(one, buttonOne, "🌩️", "⛈️");
 volumeControl(one, volumeOne);
 //?audio 1 end
@@ -36,8 +77,6 @@ const two = new Howl({
     src: ["./audio/two.ogg"],
     loop: true,
 });
-const volumeTwo = document.getElementById("volumeTwo");
-const buttonTwo = document.getElementById("buttonTwo");
 playPause(two, buttonTwo, "🌬️", "🍃");
 volumeControl(two, volumeTwo);
 //?audio 2 end
@@ -47,11 +86,10 @@ const three= new Howl({
     src: ["./audio/three.ogg"],
     loop: true,
 });
-const volumeThree = document.getElementById("volumeThree");
-const buttonThree = document.getElementById("buttonThree");
 playPause(three, buttonThree, "🧘", "🪷");
 volumeControl(three, volumeThree);
 //?audio 3 end
+
 window.onload = () => {
     buttonOne.textContent = "🌩️";
     buttonTwo.textContent = '🌬️';

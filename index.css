@@ -29,10 +29,20 @@ input[type="range"] {
     border-radius: 2px;
     box-shadow: 0 0 5px #666;
   }
-  .containers {
+.containers {
     display: flex;
 }
-.container {
+.containerOne {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.containerTwo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.containerThree {
     display: flex;
     flex-direction: column;
     padding: 10px;
