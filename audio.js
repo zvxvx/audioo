@@ -1,20 +1,24 @@
-//? Provides button click functionality for all audio files
+//? variable to help play and pause audio in playPause function
+var isPlaying = false;
+
+//? function that uses our global boolean to play and pause the audio
 let playPause = (audio, button) => {
-    if (audio.paused) {
-        audio.play();
-        button.textContent = "Pause";
-    } else {
+    if (isPlaying) {
         audio.pause();
+        isPlaying = false;
         button.textContent = "Play";
+    } else {
+        audio.play();
+        isPlaying = true;
+        button.textContent = "Pause";
     }
 };
-//? sets audio volume slider to our range input value
-let volume = (audio, volume) => {
-    audio.volume = volume.value;
-};
 
-//?? audio 1 start
-const leaves = document.getElementById("leaves");
+//? audio 1 start
+const leaves = new Howl({
+    src: ["./audio/leaves.mp3"],
+    loop: true,
+});
 const volumeLeaves = document.getElementById("volumeLeaves");
 const buttonLeaves = document.getElementById("buttonLeaves");
 
@@ -23,12 +27,15 @@ buttonLeaves.addEventListener("click", function () {
 });
 
 volumeLeaves.addEventListener("input", function () {
-    volume(leaves, volumeLeaves);
+    leaves.volume(volumeLeaves.value);
 });
-//? audio 1 end
+//?audio 1 end
 
 //? audio 2 start
-const rain = document.getElementById("rain");
+const rain = new Howl({
+    src: ["./audio/rain.mp3"],
+    loop: true,
+});
 const volumeRain = document.getElementById("volumeRain");
 const buttonRain = document.getElementById("buttonRain");
 
@@ -37,6 +44,6 @@ buttonRain.addEventListener("click", function () {
 });
 
 volumeRain.addEventListener("input", function () {
-    volume(rain, volumeRain);
+    rain.volume(volumeRain.value);
 });
 //?audio 2 end

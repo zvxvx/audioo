@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css"
-    <script src="./beats.js"></script>
-    <title>Background Beats</title>
-</head>
-<body>
-    <h3>Background beats</h3>
-    <audio>
-        <source src="example.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./favicon-16x16.png"
+        />
+        <link rel="manifest" href="./site.webmanifest" />
+        <script src="./howler.min.js" defer></script>
+        <script src="./audio.js" defer></script>
+        <title>Background Beats</title>
+    </head>
+    <body>
+        <h1>Background beats</h1>
+        <div class="containers">
+            <div class="container">
+                <audio
+                    preload="auto"
+                    src="audio/leaves.mp3"
+                    type="audio/mpeg"
+                    id="leaves"
+                    loop
+                >
+                    Your browser does not support the audio element.
+                </audio>
+                <button id="buttonLeaves">Leaves</button>
+                <input
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                    id="volumeLeaves"
+                />
+            </div>
+            <div class="container">
+                <button id="buttonRain">Rain</button>
+                <input
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                    id="volumeRain"
+                />
+            </div>
+        </div>
+    </body>
 </html>
