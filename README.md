@@ -1,4 +1,4 @@
-# background-beats
+# audio:bloom
 #### TO DO
 - [x] Add audio to page via audio tags.
 - [x] Play audio with a button that can play and pause
