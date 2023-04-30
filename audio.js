@@ -1,7 +1,4 @@
-//? variable false until user hits play button. controls playback
-
-
-//? function that uses our global boolean to play and pause the audio
+//? function controlling playback
 let playPause = (audio, button) => {
     let isPlaying = false;
     button.addEventListener("click", () => {
@@ -14,33 +11,33 @@ let playPause = (audio, button) => {
             isPlaying = true;
             button.textContent = "Pause";
         }
-    })
+    });
 };
 
 let volumeControl = (audio, volume) => {
     volume.addEventListener("input", function () {
         audio.volume(volume.value);
     });
-}
+};
 
 //? audio 1 start
-const leaves = new Howl({
-    src: ["./audio/leaves.mp3"],
+const one = new Howl({
+    src: ["./audio/one.mp3"],
     loop: true,
 });
-const volumeLeaves = document.getElementById("volumeLeaves");
-const buttonLeaves = document.getElementById("buttonLeaves");
-playPause(leaves, buttonLeaves);
-volumeControl(leaves,volumeLeaves);
+const volumeOne = document.getElementById("volumeOne");
+const buttonOne = document.getElementById("buttonOne");
+playPause(one, buttonOne);
+volumeControl(one, volumeOne);
 //?audio 1 end
 
 //? audio 2 start
-const rain = new Howl({
-    src: ["./audio/rain.mp3"],
+const two = new Howl({
+    src: ["./audio/two.mp3"],
     loop: true,
 });
-const volumeRain = document.getElementById("volumeRain");
-const buttonRain = document.getElementById("buttonRain");
-playPause(rain, buttonRain);
-volumeControl(rain,volumeRain);
+const volumeTwo = document.getElementById("volumeTwo");
+const buttonTwo = document.getElementById("buttonTwo");
+playPause(two, buttonTwo);
+volumeControl(two, volumeTwo);
 //?audio 2 end
