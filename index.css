@@ -29,21 +29,45 @@ input[type="range"] {
     border-radius: 2px;
     box-shadow: 0 0 5px #666;
   }
-.containers {
+.containersOne {
+    display: flex;
+}
+.containersTwo {
     display: flex;
 }
 .containerOne {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    width: 220px;
 }
 .containerTwo {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    width: 220px;
 }
 .containerThree {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    width: 220px;
+}
+.containerFour {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 220px;
+}
+.containerFive {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 220px;
+}
+.containerSix {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 220px;
 }
