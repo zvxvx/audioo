@@ -1,15 +1,15 @@
 //? function controlling playback
-let playPause = (audio, button, emoji) => {
+let playPause = (audio, button, sound) => {
     let isPlaying = false;
     button.addEventListener("click", () => {
         if (isPlaying) {
             audio.pause();
             isPlaying = false;
-            button.innerHTML = emoji + '<br>' + 'play';
+            button.innerHTML = sound + '<br>' + 'play';
         } else {
             audio.play();
             isPlaying = true;
-            button.innerHTML = emoji + '<br>' + 'pause';
+            button.innerHTML = sound + '<br>' + 'pause';
         }
     });
 };
@@ -97,7 +97,7 @@ volumeControl(one, volumeOne);
 //?audio 1 end
 
 //? audio 2 start
-let two = audioGen("./audio/two-raindrops.ogg");
+let two = audioGen("./audio/two-rain.ogg");
 playPause(two, buttonTwo, "🌧️");
 volumeControl(two, volumeTwo);
 //?audio 2 end
