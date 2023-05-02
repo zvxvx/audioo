@@ -25,10 +25,9 @@ footer {
 button {
     font-size: 3.5em;
     background-color: transparent;
-    min-width: 65px;
-    min-height: 110px;
     border: transparent;
     color: #d37070;
+    margin-top: -8px;
 }
 input[type="range"] {
     width: 100%;
