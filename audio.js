@@ -5,11 +5,11 @@ let playPause = (audio, button) => {
         if (isPlaying) {
             audio.pause();
             isPlaying = false;
-            button.textContent = "⏵︎";
+            button.textContent = "►";
         } else {
             audio.play();
             isPlaying = true;
-            button.textContent = "⏸︎";
+            button.textContent = "▧";
         }
     });
 };
@@ -210,9 +210,9 @@ playPause(six, buttonSix);
 volumeControl(six, volumeSix);
 //?audio 6 end
 
-buttonOne.textContent = "⏵";
-buttonTwo.textContent = "⏵︎";
-buttonThree.textContent = "⏵︎";
-buttonFour.textContent = "⏵︎";
-buttonFive.textContent = "⏵︎";
-buttonSix.textContent = "⏵︎";
+buttonOne.textContent = "►";
+buttonTwo.textContent = "►";
+buttonThree.textContent = "►";
+buttonFour.textContent = "►";
+buttonFive.textContent = "►";
+buttonSix.textContent = "►";
