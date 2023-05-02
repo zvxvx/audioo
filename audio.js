@@ -1,15 +1,15 @@
 //? function controlling playback
-let playPause = (audio, button) => {
+let playPause = (audio, button,icon) => {
     let isPlaying = false;
     button.addEventListener("click", () => {
         if (isPlaying) {
             audio.pause();
             isPlaying = false;
-            button.textContent = "◨";
+            icon.style.filter = "invert(70%)";
         } else {
             audio.play();
             isPlaying = true;
-            button.textContent = "◧";
+            icon.style.filter = "invert(100%)";
         }
     });
 };
@@ -44,14 +44,10 @@ let containerGen = (
     className,
     button,
     volume,
-    control,
-    controlClass
 ) => {
     container.classList.toggle(className);
-    control.classList.toggle(controlClass);
-    container.appendChild(control);
-    control.appendChild(button);
-    control.appendChild(volume);
+    container.appendChild(button);
+    container.appendChild(volume);
 };
 
 //? variable storage
@@ -70,43 +66,37 @@ const iconFour = document.createElement("img");
 const iconFive = document.createElement("img");
 const iconSix = document.createElement("img");
 const buttonOne = document.createElement("button");
-const controlOne = document.createElement("div");
 const volumeOne = document.createElement("input");
 const buttonTwo = document.createElement("button");
-const controlTwo = document.createElement("div");
 const volumeTwo = document.createElement("input");
 const buttonThree = document.createElement("button");
-const controlThree = document.createElement("div");
 const volumeThree = document.createElement("input");
 const buttonFour = document.createElement("button");
-const controlFour = document.createElement("div");
 const volumeFour = document.createElement("input");
 const buttonFive = document.createElement("button");
-const controlFive = document.createElement("div");
 const volumeFive = document.createElement("input");
 const buttonSix = document.createElement("button");
-const controlSix = document.createElement("div");
 const volumeSix = document.createElement("input");
 
 //? icon storage
 iconOne.src = "./img/flash.png";
 iconOne.alt = "lightning";
-containerOne.appendChild(iconOne);
+buttonOne.appendChild(iconOne);
 iconTwo.src = "./img/rainy.png";
 iconTwo.alt = "rain";
-containerTwo.appendChild(iconTwo);
+buttonTwo.appendChild(iconTwo);
 iconThree.src = "./img/wind.png";
 iconThree.alt = "wind";
-containerThree.appendChild(iconThree);
+buttonThree.appendChild(iconThree);
 iconFour.src = "./img/bowl.png";
 iconFour.alt = "wind";
-containerFour.appendChild(iconFour);
+buttonFour.appendChild(iconFour);
 iconFive.src = "./img/chimes.png";
 iconFive.alt = "wind";
-containerFive.appendChild(iconFive);
+buttonFive.appendChild(iconFive);
 iconSix.src = "./img/fireplace.png";
 iconSix.alt = "wind";
-containerSix.appendChild(iconSix);
+buttonSix.appendChild(iconSix);
 
 //? volume control storage
 volumeGen(volumeOne);
@@ -122,48 +112,36 @@ containerGen(
     "containerOne",
     buttonOne,
     volumeOne,
-    controlOne,
-    "controlOne"
 );
 containerGen(
     containerTwo,
     "containerTwo",
     buttonTwo,
     volumeTwo,
-    controlTwo,
-    "controlTwo"
 );
 containerGen(
     containerThree,
     "containerThree",
     buttonThree,
     volumeThree,
-    controlThree,
-    "controlThree"
 );
 containerGen(
     containerFour,
     "containerFour",
     buttonFour,
     volumeFour,
-    controlFour,
-    "controlFour"
 );
 containerGen(
     containerFive,
     "containerFive",
     buttonFive,
     volumeFive,
-    controlFive,
-    "controlFive"
 );
 containerGen(
     containerSix,
     "containerSix",
     buttonSix,
     volumeSix,
-    controlSix,
-    "controlSix"
 );
 
 //? append storage for containersOne and ContainersTwo
@@ -176,43 +154,36 @@ containersTwo.appendChild(containerSix);
 
 //? audio 1 start
 let one = audioGen("./audio/one-thunder.mp3");
-playPause(one, buttonOne);
+playPause(one, buttonOne, iconOne);
 volumeControl(one, volumeOne);
 //?audio 1 end
 
 //? audio 2 start
 let two = audioGen("./audio/two-rain.mp3");
-playPause(two, buttonTwo);
+playPause(two, buttonTwo, iconTwo);
 volumeControl(two, volumeTwo);
 //?audio 2 end
 
 //? audio 3 start
 let three = audioGen("./audio/three-wind.mp3");
-playPause(three, buttonThree);
+playPause(three, buttonThree, iconThree);
 volumeControl(three, volumeThree);
 //?audio 3 end
 
 //? audio 4 start
 let four = audioGen("./audio/four-bowl.mp3");
-playPause(four, buttonFour);
+playPause(four, buttonFour, iconFour);
 volumeControl(four, volumeFour);
 //?audio 4 end
 
 //? audio 5 start
 let five = audioGen("./audio/five-chimes.mp3");
-playPause(five, buttonFive);
+playPause(five, buttonFive, iconFive);
 volumeControl(five, volumeFive);
 //?audio 5 end
 
 //? audio 6 start
 let six = audioGen("./audio/six-fireplace.mp3");
-playPause(six, buttonSix);
+playPause(six, buttonSix, iconSix);
 volumeControl(six, volumeSix);
 //?audio 6 end
-
-buttonOne.textContent = "◨";
-buttonTwo.textContent = "◨";
-buttonThree.textContent = "◨";
-buttonFour.textContent = "◨";
-buttonFive.textContent = "◨";
-buttonSix.textContent = "◨";
