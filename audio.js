@@ -1,15 +1,15 @@
 //? function controlling playback
-let playPause = (audio, button,icon) => {
+let playPause = (audio, button,image) => {
     let isPlaying = false;
     button.addEventListener("click", () => {
         if (isPlaying) {
             audio.pause();
             isPlaying = false;
-            icon.style.filter = "invert(70%)";
+            image.style.filter = "invert(70%)";
         } else {
             audio.play();
             isPlaying = true;
-            icon.style.filter = "invert(100%)";
+            image.style.filter = "invert(100%)";
         }
     });
 };
