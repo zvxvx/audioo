@@ -36,7 +36,9 @@ h1 {
     color:#e3a5a5;
     animation: pulse-glow 10s infinite;
     font-size: 4em;
+    text-decoration: underline;
     text-align:center;
+    margin-bottom: 80px;
 }
 img {
     margin-left: 50px;
@@ -68,8 +70,10 @@ img {
     flex-direction: column;
     justify-content: center;
     width: 210px;
-    padding: 50px;
-    margin-top: -20px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 40px;
+    margin-top: -10px;
 }
 .controlOne,
 .controlTwo,
