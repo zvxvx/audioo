@@ -28,6 +28,7 @@ button {
     border: transparent;
     color: #d37070;
     margin-top: -8px;
+    -webkit-tap-highlight-color: transparent;
 }
 input[type="range"] {
     width: 100%;
