@@ -175,37 +175,37 @@ containersTwo.appendChild(containerFive);
 containersTwo.appendChild(containerSix);
 
 //? audio 1 start
-let one = audioGen("./audio/one-thunder.ogg");
+let one = audioGen("./audio/one-thunder.mp3");
 playPause(one, buttonOne);
 volumeControl(one, volumeOne);
 //?audio 1 end
 
 //? audio 2 start
-let two = audioGen("./audio/two-rain.ogg");
+let two = audioGen("./audio/two-rain.mp3");
 playPause(two, buttonTwo);
 volumeControl(two, volumeTwo);
 //?audio 2 end
 
 //? audio 3 start
-let three = audioGen("./audio/three-wind.ogg");
+let three = audioGen("./audio/three-wind.mp3");
 playPause(three, buttonThree);
 volumeControl(three, volumeThree);
 //?audio 3 end
 
 //? audio 4 start
-let four = audioGen("./audio/four-bowl.ogg");
+let four = audioGen("./audio/four-bowl.mp3");
 playPause(four, buttonFour);
 volumeControl(four, volumeFour);
 //?audio 4 end
 
 //? audio 5 start
-let five = audioGen("./audio/five-chimes.ogg");
+let five = audioGen("./audio/five-chimes.mp3");
 playPause(five, buttonFive);
 volumeControl(five, volumeFive);
 //?audio 5 end
 
 //? audio 6 start
-let six = audioGen("./audio/six-fireplace.ogg");
+let six = audioGen("./audio/six-fireplace.mp3");
 playPause(six, buttonSix);
 volumeControl(six, volumeSix);
 //?audio 6 end
