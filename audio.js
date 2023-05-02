@@ -210,7 +210,7 @@ playPause(six, buttonSix);
 volumeControl(six, volumeSix);
 //?audio 6 end
 
-buttonOne.textContent = "⏵︎";
+buttonOne.textContent = "⏵";
 buttonTwo.textContent = "⏵︎";
 buttonThree.textContent = "⏵︎";
 buttonFour.textContent = "⏵︎";
