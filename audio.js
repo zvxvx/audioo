@@ -34,7 +34,7 @@ let volumeGen = (volume) => {
     volume.min = "0";
     volume.max = "1";
     volume.step = "0.01";
-    volume.value = ".50";
+    volume.value = "1";
     volume.id = "volume";
 };
 
