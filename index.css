@@ -11,6 +11,7 @@ body {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -18,7 +19,7 @@ footer {
     width: 100%;
     background-color: #681919;
     color: #f9bdbd;
-    padding: 20px;
+    padding: 5px;
     box-shadow: 0 0 10px #350000;
   }
   
@@ -111,6 +112,17 @@ img {
     width: 100%;
     /*border: 1px white solid;*/
 }
+.icons {
+    filter: invert(0%);
+    width: 30px;
+    margin-bottom: -5px;
+    padding: 0px;
+}
+a {
+    color: #fbcfcf;
+    animation:pulse-glow 4s infinite;
+    text-decoration: none;
+}
 @media only screen and (max-width: 768px) {
     .containerOne,
     .containerTwo,
@@ -124,7 +136,7 @@ img {
         width: 100%;
         padding-bottom: 40px;
         margin-top: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .controlOne,
@@ -156,12 +168,12 @@ img {
 
 @keyframes pulse-glow {
     0% {
-        text-shadow: none;
+        text-shadow: 0 0 0;
     }
     50% {
-        text-shadow: 0 0 8px #dfc8c8;
+        text-shadow: 0 0 6px #f59696;
     }
     100% {
-        text-shadow: none;
+        text-shadow: 0 0 0;
     }
 }
