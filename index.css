@@ -2,7 +2,10 @@ html {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #571717;
+    align-items: center;
 
 }
 footer {
@@ -21,7 +24,8 @@ footer {
 button {
     font-size: 5em;
     background-color: transparent;
-    min-width: 60px;
+    min-width: 65px;
+    min-height: 110px;
     border: transparent;
     color: #d37070;
 }
@@ -57,18 +61,25 @@ h1 {
 }
 img {
     filter: invert(80%) hue-rotate(180deg);
-    color: rgb(104, 104, 247);
-    width: 150px;
+    width: 120px;
+}
+.logo {
+    filter: invert(0%);
+    width: 1000px;
+    margin-top: -180px;
+    margin-bottom: -80px;
 }
 .containersOne {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 .containersTwo {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 .containerOne,
 .containerTwo,
@@ -114,6 +125,7 @@ img {
         width: 100%;
         padding-bottom: 40px;
         margin-top: 0px;
+        margin-bottom: 50px;
     }
 
     .controlOne,
@@ -123,6 +135,7 @@ img {
     .controlFive,
     .controlSix {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         width: 100%;
     }
@@ -133,6 +146,12 @@ img {
         text-decoration: underline;
         text-align: center;
         margin-bottom: 80px;
+    }
+    .logo {
+        filter: invert(0%);
+        width: 100%;
+        margin-top: -80px;
+        margin-bottom: -60px;
     }
 }
 
