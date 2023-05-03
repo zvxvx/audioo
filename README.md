@@ -4,3 +4,4 @@
 - [ ] add an about page
 - [ ] tabs for different sound groups
 - [ ] each sound group is to have its own theme
+audioo.org is our new home!
