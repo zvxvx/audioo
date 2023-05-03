@@ -77,12 +77,7 @@ img {
     display: flex;
     justify-content: center;
 }
-.containerOne,
-.containerTwo,
-.containerThree,
-.containerFour,
-.containerFive,
-.containerSix {
+.container {
     display: flex;
     width: 220px;
     flex-direction: column;
@@ -103,8 +98,8 @@ img {
 }
 a {
     color: #3f3751;
-    animation:pulse-glow 4s infinite;
-    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: none;
 }
 @media only screen and (max-width: 770px) {
     .containersOne {
@@ -119,12 +114,7 @@ a {
         flex-wrap: wrap;
     
     }
-    .containerOne,
-    .containerTwo,
-    .containerThree,
-    .containerFour,
-    .containerFive,
-    .containerSix {
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;

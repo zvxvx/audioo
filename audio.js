@@ -41,11 +41,11 @@ let volumeGen = (volume) => {
 //? container
 let containerGen = (
     container,
-    className,
+    classContainer,
     button,
     volume,
 ) => {
-    container.classList.toggle(className);
+    container.classList.toggle(classContainer);
     container.appendChild(button);
     container.appendChild(volume);
 };
@@ -109,37 +109,37 @@ volumeGen(volumeSix);
 //? container storage for containersOne
 containerGen(
     containerOne,
-    "containerOne",
+    "container",
     buttonOne,
     volumeOne,
 );
 containerGen(
     containerTwo,
-    "containerTwo",
+    "container",
     buttonTwo,
     volumeTwo,
 );
 containerGen(
     containerThree,
-    "containerThree",
+    "container",
     buttonThree,
     volumeThree,
 );
 containerGen(
     containerFour,
-    "containerFour",
+    "container",
     buttonFour,
     volumeFour,
 );
 containerGen(
     containerFive,
-    "containerFive",
+    "container",
     buttonFive,
     volumeFive,
 );
 containerGen(
     containerSix,
-    "containerSix",
+    "container",
     buttonSix,
     volumeSix,
 );
