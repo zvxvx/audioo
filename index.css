@@ -6,7 +6,6 @@ body {
     flex-direction: column;
     background-color: #2c2936;
     align-items: center;
-
 }
 footer {
     display: flex;
@@ -21,8 +20,8 @@ footer {
     color: #413a52;
     padding: 5px;
     box-shadow: 0 0 10px #414141;
-  }
-  
+}
+
 button {
     background-color: transparent;
     border: transparent;
@@ -47,31 +46,34 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 2px;
     border: 1px #ded2fa solid;
 }
-h1 {
-    color: #c3aef5;
-    animation: pulse-glow 10s infinite;
-    font-size: 4em;
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 80px;
-}
 img {
     filter: invert(70%);
     width: 120px;
     padding-bottom: 20px;
 }
 .logo {
-    filter: invert(0%);
-    width: 800px;
-    margin-top: -160px;
-    margin-bottom: 0px;
+    background: url("./img/logo.svg") no-repeat center center / cover;
+    width: 750px;
+    height: 210px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.menu {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-right: 100px;
+    gap: 10px;
+}
+li a {
+    background-color: #c3aef5;
+    padding: 5px;
+    border-radius: 0.2em;
 }
 .containersOne {
     display: flex;
     justify-content: center;
     margin-top: -40px;
-
-
 }
 .containersTwo {
     display: flex;
@@ -88,7 +90,6 @@ img {
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 50px;
-    /*border: 1px red solid;*/
 }
 .icons {
     filter: invert(0%);
@@ -106,13 +107,11 @@ a {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-    
     }
     .containersTwo {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-    
     }
     .container {
         display: flex;
@@ -123,9 +122,17 @@ a {
         margin-bottom: 30px;
     }
     .logo {
-        filter: invert(0%);
-        width: 400px;
-        margin-top: -90px;
-        margin-bottom: 10px;
+        width: 450px;
+        margin-top: -50px;
+        margin-bottom: 40px;
+        margin-right: 30px;
+    }
+    .menu {
+        justify-content: end;
+        margin-top: 45px;
+        margin-right: 55px;
+    }
+    li {
+        font-size: 0.8em;
     }
 }
