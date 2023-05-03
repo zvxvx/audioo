@@ -62,7 +62,7 @@ img {
 }
 .logo {
     filter: invert(0%);
-    width: 1000px;
+    width: 800px;
     margin-top: -200px;
     margin-bottom: -80px;
 }
@@ -106,7 +106,7 @@ a {
     animation:pulse-glow 4s infinite;
     text-decoration: underline;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
     .containersOne {
         display: flex;
         justify-content: center;
@@ -134,8 +134,8 @@ a {
     }
     .logo {
         filter: invert(0%);
-        width: 100%;
+        width: 400px;
         margin-top: -100px;
-        margin-bottom: -60px;
+        margin-bottom: -40px;
     }
 }
