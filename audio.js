@@ -5,11 +5,11 @@ let playPause = (audio, button,image) => {
         if (isPlaying) {
             audio.pause();
             isPlaying = false;
-            image.style.filter = "invert(70%)";
+            image.style.opacity = "0.5";
         } else {
             audio.play();
             isPlaying = true;
-            image.style.filter = "invert(100%)";
+            image.style.opacity = "1";
         }
     });
 };
@@ -79,23 +79,29 @@ const buttonSix = document.createElement("button");
 const volumeSix = document.createElement("input");
 
 //? icon storage
-iconOne.src = "./img/flash.png";
+iconOne.src = "./img/lightning.png";
 iconOne.alt = "lightning";
+iconOne.style.opacity = "0.5";
 buttonOne.appendChild(iconOne);
 iconTwo.src = "./img/rainy.png";
 iconTwo.alt = "rain";
+iconTwo.style.opacity = "0.5";
 buttonTwo.appendChild(iconTwo);
 iconThree.src = "./img/wind.png";
 iconThree.alt = "wind";
+iconThree.style.opacity = "0.5";
 buttonThree.appendChild(iconThree);
 iconFour.src = "./img/bowl.png";
 iconFour.alt = "wind";
+iconFour.style.opacity = "0.5";
 buttonFour.appendChild(iconFour);
 iconFive.src = "./img/chimes.png";
 iconFive.alt = "wind";
+iconFive.style.opacity = "0.5";
 buttonFive.appendChild(iconFive);
 iconSix.src = "./img/fireplace.png";
 iconSix.alt = "wind";
+iconSix.style.opacity = "0.5";
 buttonSix.appendChild(iconSix);
 
 //? volume control storage
