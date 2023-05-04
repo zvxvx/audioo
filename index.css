@@ -146,7 +146,7 @@ a {
         width: 450px;
         margin-top: -55px;
         margin-bottom: 40px;
-        margin-right: 30px;
+        margin-right: 20px;
     }
     .menu {
         margin-top: 50px;
@@ -156,7 +156,7 @@ a {
         font-size: 0.8em;
     }
     .stage {
-        margin-left: -30px;
+        margin-left: -35px;
         margin-top: -35px;
         font-size: 0.8em;
     }
@@ -175,24 +175,20 @@ a {
     border-radius: 0.5em;
     margin-top: -28px;
     margin-left: 16px;
-    box-shadow: 2px 2px 12px #141414;
+    margin-right:10px;
+
 }
 content {
     margin-top: -45px;
     margin-bottom: 25px;
 }
 @media only screen and (max-width: 768px) {
-    p,
-    .faq {
-        max-width: 370px;
-        min-width: 0px;
-    }
     content {
         margin-top: -45px;
         margin-bottom: 25px;
     }
     .aboutContainer {
-        margin-left: -10px;
+        margin-left: 0px;
         max-width: 345px;
         margin-top: -30px;
     }
@@ -248,5 +244,10 @@ ul.req a {
     }
     li {
         font-size: 1em;
+    }
+    p,
+    .faq {
+        max-width: 370px;
+        min-width: 0px;
     }
 }
