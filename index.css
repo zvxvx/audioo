@@ -24,7 +24,7 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #8e7fb2;
+    background-color: #b39de7;
     color: #211b2e;
     padding: 5px;
     box-shadow: 0 0 10px #414141;
@@ -176,6 +176,7 @@ a {
     margin-top: -28px;
     margin-left: 26px;
     margin-right: 10px;
+    margin-bottom:50px;
 }
 content {
     margin-top: -45px;
