@@ -25,7 +25,7 @@ footer {
     right: 0;
     width: 100%;
     background-color: #8e7fb2;
-    color: #413a52;
+    color:#211b2e;
     padding: 5px;
     box-shadow: 0 0 10px #414141;
 }
@@ -56,6 +56,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 img {
     width: 120px;
+    height: auto;
     padding-bottom: 20px;
 }
 .stage {
@@ -118,7 +119,7 @@ li.item a:hover,
     padding: 0px;
 }
 a {
-    color: #3f3751;
+    color: #211b2e;
     font-weight: bold;
     text-decoration: none;
 }
