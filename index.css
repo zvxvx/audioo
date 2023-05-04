@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     background-color: #2c2936;
     align-items: center;
+    color:#c3aef5;
 }
 footer {
     display: flex;
@@ -61,9 +62,8 @@ img {
 }
 .menu {
     display: flex;
-    justify-content: end;
+    margin-left: 300px;
     list-style: none;
-    margin-right: 95px;
     margin-top: 10px;
     gap: 10px;
 }
@@ -71,6 +71,7 @@ li a {
     background-color: #c3aef5;
     padding: 5px;
     border-radius: 0.2em;
+    font-size: 1.1em;
 }
 .containersOne {
     display: flex;
@@ -130,11 +131,27 @@ a {
         margin-right: 30px;
     }
     .menu {
-        justify-content: end;
         margin-top: 50px;
-        margin-right: 55px;
+        margin-left: 165px;
     }
     li {
         font-size: 0.8em;
+    }
+}
+/* about.html */
+.about {
+    margin-top: 0px;
+    max-width: 570px;
+    
+}
+.about a {
+    background-color: #c3aef5;
+    padding-left: 2px;
+    padding-right:2px;
+    border-radius: 0.2em;
+}
+@media only screen and (max-width: 768px) {
+    .about {
+        max-width:370px;
     }
 }
