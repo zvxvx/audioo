@@ -2,7 +2,7 @@
 #### TO DO
 - [ ] support light and dark mode
 - [x] add an about page
-- [ ] add a faq page
+- [x] add a faq page
 - [ ] tabs for different sound groups
 - [ ] each sound group is to have its own theme
 
