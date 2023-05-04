@@ -1,8 +1,20 @@
 # audi∞
 #### TO DO
 - [ ] support light and dark mode
-- [ ] add an about page
+- [x] add an about page
+- [ ] add a faq page
 - [ ] tabs for different sound groups
 - [ ] each sound group is to have its own theme
 
-audioo.org is our new home!
+
+#### SOUNDS TO ADD
+- [ ] crickets
+- [ ] feet crunching on snow
+- [ ] babbling brook
+- [ ] barking dogs / sniffing dogs
+- [ ] sizzling food
+- [ ] ocean waves
+- [ ] electric sounds
+- [ ] rapids
+- [ ] city sounds
+- [ ] different colors of noise

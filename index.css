@@ -1,3 +1,4 @@
+/* index.html */
 html {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -7,6 +8,12 @@ body {
     background-color: #2c2936;
     align-items: center;
     color:#c3aef5;
+}
+p, .faq {
+    margin-top: 10px;
+    max-width: 570px;
+    min-width: 570px;
+    
 }
 footer {
     display: flex;
@@ -51,6 +58,12 @@ img {
     width: 120px;
     padding-bottom: 20px;
 }
+.stage {
+    color: #2c2936;
+    font-weight: bold;
+    margin-left:-20px;
+    margin-top: -40px;
+}
 .logo {
     background: url("./img/logo.svg") no-repeat center center / cover;
     width: 750px;
@@ -71,6 +84,9 @@ li a {
     padding: 5px;
     border-radius: 0.2em;
     font-size: 1.1em;
+}
+li a:hover, .link a:hover {
+    background-color: #d9c9ff;
 }
 .containersOne {
     display: flex;
@@ -137,29 +153,80 @@ a {
     li {
         font-size: 0.8em;
     }
+    .stage {
+        margin-left:-30px;
+        margin-top: -35px;
+        font-size: 0.8em;
+    }
 }
 /* about.html */
-.about {
-    margin-top: 10px;
-    max-width: 570px;
-    
-}
-.about a {
+.link a {
     background-color: #c3aef5;
     padding-left: 2px;
     padding-right:2px;
     border-radius: 0.2em;
+}
+.aboutContainer {
+    background-color: #c3adf5;
+    color: #3f3751;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-top: -28px;
+    margin-left: 16px;
+    box-shadow: 2px 2px 12px #141414;
 }
 content {
     margin-top: -45px;
     margin-bottom:25px;
 }
 @media only screen and (max-width: 768px) {
-    .about {
+    p, .faq {
         max-width:370px;
+        min-width: 0px;
     }
     content {
         margin-top: -45px;
         margin-bottom:25px;
     }
+    .aboutContainer {
+        margin-left: -10px;
+        max-width: 345px;
+        margin-top: -30px;
+    }
+}
+/* faq.html */
+.faq {
+    display: inline-block;
+    margin-top: -20px;
+}
+.faq-question {
+    display: inline;
+    background-color: #c3adf5;
+    color: #3f3751;
+}
+.faq-answer{
+    background-color: #1b1721;
+    color:#c3aef5;
+    margin-top: 15px;
+    margin-bottom: 40px;
+
+}
+.faq-answer, .faq-question{
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-right: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .faq-question {
+        display: block;
+        background-color: #c3adf5;
+        color: #3f3751;
+    }
+    .faq-question {
+        margin-bottom: -5px;
+    }
+    .faq {
+        margin-top: -40px;
+    }
+
 }
