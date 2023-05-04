@@ -25,7 +25,7 @@ footer {
     right: 0;
     width: 100%;
     background-color: #8e7fb2;
-    color:#211b2e;
+    color: #211b2e;
     padding: 5px;
     box-shadow: 0 0 10px #414141;
 }
@@ -174,9 +174,8 @@ a {
     padding: 0.5em;
     border-radius: 0.5em;
     margin-top: -28px;
-    margin-left: 16px;
-    margin-right:10px;
-
+    margin-left: 26px;
+    margin-right: 10px;
 }
 content {
     margin-top: -45px;
