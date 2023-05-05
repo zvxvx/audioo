@@ -130,7 +130,7 @@ footer a, nav a {
 }
 #about, #faq, .faq-question, .faq-answer {
     padding: 0.5em;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
 /*     border: 1px red solid; */
 }
 #about, #faq {
@@ -140,8 +140,6 @@ footer a, nav a {
     max-width: 700px;
     min-width: 700px;
     padding: 2em;
-}
-#about {
     margin-bottom: 40px;
 }
 .faq-question {
@@ -151,12 +149,18 @@ footer a, nav a {
     margin-bottom: 0px;
 }
 .faq-answer {
-    color: #af9bdc;
+    border:1px #675888 solid;
+    box-shadow: 3px 3px 1px #675888;
     margin-bottom: 20px;
-    margin-top: 0px;
+    margin-top: 5px;
 }
 ul.req {
+    border:1px #675888 solid;
+    box-shadow: 4px 4px 1px #675888;
     padding-left: 1.3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-top: 5px;
 }
 a {
     color: #c3aef5;
