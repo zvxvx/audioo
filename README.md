@@ -5,6 +5,7 @@
 - [x] add a faq page
 - [ ] tabs for different sound groups
 - [ ] each sound group is to have its own theme
+- [ ] add 'if no sound' in faq
 
 
 #### SOUNDS TO ADD
