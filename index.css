@@ -231,8 +231,6 @@ ul.req a {
 @media only screen and (max-width: 768px) {
     .faq-question {
         display: block;
-        background-color: #c3adf5;
-        color: #3f3751;
     }
     .faq-question {
         margin-bottom: -5px;
