@@ -172,7 +172,6 @@ a {
     #about, #faq {
         max-width: 450px;
         min-width: auto;
-        margin: 5px;
     }
     .containersOne {
         display: flex;
