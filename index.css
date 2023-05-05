@@ -25,7 +25,7 @@ footer {
     right: 0;
     width: 100%;
     background-color: #af9bdc;
-    color: #211b2e;
+    color: #1d1728;
     padding: 5px;
     box-shadow: 0 0 10px #414141;
 }
@@ -86,8 +86,7 @@ li.item a {
     border-radius: 0.2em;
     font-size: 1.1em;
 }
-li.item a:hover,
-.link a:hover {
+li.item a:hover {
     background-color: #d9c9ff;
 }
 .containersOne {
@@ -119,7 +118,7 @@ li.item a:hover,
     padding: 0px;
 }
 a {
-    color: #211b2e;
+    color: #1d1728;
     font-weight: bold;
     text-decoration: none;
 }
@@ -163,10 +162,12 @@ a {
 }
 /*! about.html */
 .link a {
-    background-color: #c3aef5;
-    padding-left: 2px;
-    padding-right: 2px;
-    border-radius: 0.2em;
+    color: #c3aef5;
+    text-decoration: underline;
+}
+.link a:hover {
+    color: #d4c5f7;
+    text-decoration: underline;
 }
 .aboutContainer {
     background-color: #af9bdc;
