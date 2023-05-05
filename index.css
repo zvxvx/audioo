@@ -45,7 +45,7 @@ input[type="range"] {
     opacity: 0.7;
     border-radius: 2px;
 }
-input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb {
+input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 35px;
     height: 35px;
@@ -53,6 +53,13 @@ input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb
     border-radius: 2px;
     border: 1px #ded2fa solid;
 }
+input[type="range"]::-moz-range-thumb {
+    width: 35px;
+    height: 35px;
+    background: #c3aef5;
+    border-radius: 2px;
+    border: 1px #ded2fa solid;
+  }
 img {
     width: 120px;
     height: auto;
