@@ -6,7 +6,7 @@
 - [ ] tabs for different sound groups
 - [ ] each sound group is to have its own theme
 - [x] add 'if no sound' in faq
-- [ ] have about and faq on the same page as whatever audio is playing.
+- [x] have about and faq on the same page as whatever audio is playing.
 
 
 #### SOUNDS TO ADD
