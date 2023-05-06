@@ -54,8 +54,8 @@ input[type="range"]::-moz-range-thumb {
     border: 1px #ded2fa solid;
   }
 img {
-    width: 120px;
-    height: auto;
+    width: 150px;
+    height: 150px;
     padding-bottom: 20px;
 }
 h1 {
@@ -111,9 +111,9 @@ li.item a:hover {
     padding-bottom: 50px;
 /*     border: 1px red solid; */
 }
-.icons {
-    filter: invert(0%);
+.icon {
     width: 30px;
+    height: 30px;
     margin-bottom: -5px;
     padding: 0px;
 }
@@ -162,6 +162,9 @@ a {
 }
 /*!media*/
 @media only screen and (max-width: 768px) {
+    .faq-question {
+        display: block;
+    }
     #about, #faq {
         max-width: 450px;
         min-width: auto;
@@ -188,7 +191,7 @@ a {
     .logo {
         width: 375px;
         margin-top: -152px;
-        margin-bottom: 20px;
+        margin-bottom: -20px;
     }
 /*     .menu {
         margin-top: 45px;
