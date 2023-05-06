@@ -189,11 +189,11 @@ a {
     .logo {
         width: 375px;
         min-width: auto;
-        margin-top: -40px;
+        margin-top: -52px;
         margin-bottom: 20px;
     }
     .menu {
-        margin-top: 35px;
+        margin-top: 45px;
         margin-left:-30px;
     }
     li.item {
