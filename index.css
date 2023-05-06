@@ -64,32 +64,26 @@ h1 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.stage {
-    color: #1d1728;
-    font-weight: bold;
-    margin-left: -230px;
-    margin-top: -35px;
-}
 .logo {
     background: url("./img/logo.svg") no-repeat center center / cover;
-    width: 750px;
+    width: 600px;
     height: 200px;
     text-align: center;
-    margin-bottom: 80px;
-    margin-top: -15px;
+    margin-bottom: 50px;
+    margin-top: -20px;
 }
 .menu {
     display: flex;
-    margin-left: 300px;
+    justify-content: start;
     list-style: none;
-    margin-top: 10px;
-    gap: 10px;
+    margin-top: 15px;
 }
 li.item a {
     background-color: #b7a4e3;
-    padding: 5px;
-    border-radius: 0.2em;
+    padding: 10px;
+    margin: -2px;
     font-size: 1.1em;
+    border-radius: 0.2em;
 }
 li.item a:hover {
     background-color: #d9c9ff;
@@ -193,21 +187,20 @@ a {
         margin-bottom: 30px;
     }
     .logo {
-        width: 450px;
-        margin-top: -55px;
-        margin-bottom: 40px;
-        margin-right: 20px;
+        width: 375px;
+        min-width: auto;
+        margin-top: -40px;
+        margin-bottom: 20px;
     }
     .menu {
-        margin-top: 50px;
-        margin-left: 165px;
+        margin-top: 35px;
+        margin-left:-30px;
     }
     li.item {
         font-size: 0.8em;
     }
-    .stage {
-        margin-left: -145px;
-        margin-top: -35px;
-        font-size: 0.8em;
+    li.item a {
+        padding: 6px;
+        margin: -2px;
     }
 }
