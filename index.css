@@ -67,10 +67,9 @@ h1 {
 .logo {
     background: url("./img/logo.svg") no-repeat center center / cover;
     width: 600px;
-    height: 200px;
+    height: 420px;
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: -20px;
+    margin-top: -120px;
 }
 /* .menu {
     display: flex;
@@ -188,7 +187,7 @@ a {
     }
     .logo {
         width: 375px;
-        margin-top: -52px;
+        margin-top: -152px;
         margin-bottom: 20px;
     }
 /*     .menu {
