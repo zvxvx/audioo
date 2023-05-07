@@ -51,8 +51,7 @@ let containerGen = (
 };
 
 //? variable storage
-const containersOne = document.querySelector(".containersOne");
-const containersTwo = document.querySelector(".containersTwo");
+const containers = document.querySelector(".containers");
 const containerOne = document.createElement("div");
 const containerTwo = document.createElement("div");
 const containerThree = document.createElement("div");
@@ -112,7 +111,7 @@ volumeGen(volumeFour);
 volumeGen(volumeFive);
 volumeGen(volumeSix);
 
-//? container storage for containersOne
+//? container storage for under containers
 containerGen(
     containerOne,
     "container",
@@ -151,12 +150,12 @@ containerGen(
 );
 
 //? append storage for containersOne and ContainersTwo
-containersOne.appendChild(containerOne);
-containersOne.appendChild(containerTwo);
-containersOne.appendChild(containerThree);
-containersTwo.appendChild(containerFour);
-containersTwo.appendChild(containerFive);
-containersTwo.appendChild(containerSix);
+containers.appendChild(containerOne);
+containers.appendChild(containerTwo);
+containers.appendChild(containerThree);
+containers.appendChild(containerFour);
+containers.appendChild(containerFive);
+containers.appendChild(containerSix);
 
 //? audio 1 start
 let one = audioGen("./audio/one-thunder.mp3");

@@ -71,31 +71,13 @@ h1 {
     text-align: center;
     margin-top: -120px;
 }
-/* .menu {
+.containers {
     display: flex;
-    justify-content: start;
-    list-style: none;
-    margin-top: 15px;
-}
-li.item a {
-    background-color: #b7a4e3;
-    padding: 10px;
-    margin: -2px;
-    font-size: 1.1em;
-    border-radius: 0.2em;
-}
-li.item a:hover {
-    background-color: #d9c9ff;
-} */
-.containersOne {
-    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
     justify-content: center;
     margin-top: -40px;
 } 
-.containersTwo {
-    display: flex;
-    justify-content: center;
-}
 .container {
     display: flex;
     width: 220px;
@@ -161,47 +143,35 @@ a {
     text-decoration: underline;
 }
 /*!media*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 810px) {
     .faq-question {
         display: block;
     }
     #about, #faq {
-        max-width: 450px;
+        max-width: 600px;
         min-width: auto;
     }
-    .containersOne {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .containersTwo {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-bottom: -30px;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
+
     .logo {
-        width: 375px;
-        margin-top: -152px;
+        max-width: 455px;
+        margin-top: -142px;
         margin-bottom: -40px;
     }
-/*     .menu {
-        margin-top: 45px;
-        margin-left:-30px;
+    .container {
+        width: 40%;
     }
-    li.item {
-        font-size: 0.8em;
+}
+@media only screen and (max-width:550px) {
+    .logo {
+        max-width: 320px;
+        margin-top: -162px;
+        margin-bottom: -60px;
     }
-    li.item a {
-        padding: 6px;
-        margin: -2px;
-    } */
+    #about, #faq {
+        max-width: 400px;
+        min-width: 200px;
+    }
+    .container {
+        width: 80%;
+    }
 }
