@@ -7,7 +7,7 @@
 - [ ] each sound group is to have its own theme
 - [x] add 'if no sound' in faq
 - [x] have about and faq on the same page as whatever audio is playing.
-- [ ] add another breakpoint for two columns for smaller tablets
+- [x] make mobile view more malleable
 - [ ] refine logo
 
 

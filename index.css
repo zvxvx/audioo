@@ -68,8 +68,8 @@ h1 {
     background: url("./img/logo.svg") no-repeat center center / cover;
     width: 600px;
     height: 420px;
-    text-align: center;
-    margin-top: -120px;
+    margin-top: -70px;
+    margin-bottom: -70px;
 }
 .containers {
     display: flex;
@@ -151,21 +151,15 @@ a {
         max-width: 600px;
         min-width: auto;
     }
-
-    .logo {
-        max-width: 455px;
-        margin-top: -142px;
-        margin-bottom: -40px;
-    }
     .container {
         width: 40%;
     }
 }
 @media only screen and (max-width:550px) {
     .logo {
-        max-width: 320px;
-        margin-top: -162px;
-        margin-bottom: -60px;
+        max-width: 350px;
+        margin-top: -130px;
+        margin-bottom: -100px;
     }
     #about, #faq {
         max-width: 400px;
