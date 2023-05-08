@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     background-color: #392B3B;
     align-items: center;
-    color: #D0DCDC;
+    color: #283030;
 }
 footer {
     display: flex;
@@ -18,7 +18,7 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #221A23;
+    background-color: #a5b2b2;
     padding: 5px;
 }
 button {
@@ -97,11 +97,11 @@ h1 {
     padding: 0px;
 }
 footer a {
-    color: #D0DCDC;
+    color: #283030;
     text-decoration: none;
 }
 #about {
-    background-color: #574968;
+    background-color: #a5b2b2;
     margin-top: 0px;
     max-width: 700px;
     min-width: 700px;
@@ -110,7 +110,7 @@ footer a {
     border-radius: 0.5em;
 }
 a {
-    color: #D0DCDC;
+    color: #283030;
     font-weight: bold;
     text-decoration: underline;
 }
