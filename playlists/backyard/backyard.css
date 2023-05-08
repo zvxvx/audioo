@@ -102,14 +102,14 @@ footer a {
     text-decoration: none;
 }
 #about {
-    background-color: #47522a;
+    background-color: #58543f;
     color: #FFF1E0;
     margin-top: 0px;
     max-width: 700px;
     min-width: 700px;
     padding: 2em;
     margin-bottom: 40px;
-    border-radius: 0.2em;
+    border-radius: 0.5em;
 }
 a {
     color: #FFF1E0;

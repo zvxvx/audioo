@@ -9,27 +9,24 @@
 - [x] have about and faq on the same page as whatever audio is playing.
 - [x] make mobile view more malleable
 - [x] refine logo
-- [] kill/resume button?
+- [ ] kill/resume button?
 
 
 #### SOUNDS TO ADD
 - [ ] feet crunching on snow
 - [ ] barking dogs / sniffing dogs
 - [ ] sizzling food
-- [ ] ocean waves
+- [x] ocean waves
 - [ ] electric sounds
 - [ ] rapids
 - [ ] fan
 
 #### backyard
-- [x] chimes
-- [x] thunder
-- [x] wind
-- [x] rain
-- [x] cicada
-- [ ] brook
+- [x] playlist complete!
 
-###
+#### zen
+- [x] tibetan bowl
+
 
 #### urban sounds
 - [ ] cars
