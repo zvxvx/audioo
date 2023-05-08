@@ -5,7 +5,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #283618;
+    background-color: #2e3327;
     align-items: center;
     color: #FFF1E0;
 }
@@ -18,9 +18,9 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #47522a;
+    background-color: #58503f;
     padding: 5px;
-    box-shadow: 0 0 10px #414141;
+    box-shadow: 0 0 14px #262016;
 }
 button {
     background-color: transparent;
@@ -102,7 +102,7 @@ footer a {
     text-decoration: none;
 }
 #about {
-    background-color: #58543f;
+    background-color: #58503f;
     color: #FFF1E0;
     margin-top: 0px;
     max-width: 700px;

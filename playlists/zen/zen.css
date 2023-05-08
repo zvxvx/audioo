@@ -19,6 +19,7 @@ footer {
     right: 0;
     width: 100%;
     background-color: #a5b2b2;
+    box-shadow: 0 0 14px #492f53;
     padding: 5px;
 }
 button {
