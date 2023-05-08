@@ -8,17 +8,31 @@
 - [x] add 'if no sound' in faq
 - [x] have about and faq on the same page as whatever audio is playing.
 - [x] make mobile view more malleable
-- [ ] refine logo
+- [x] refine logo
+- [] kill/resume button?
 
 
 #### SOUNDS TO ADD
-- [ ] crickets
 - [ ] feet crunching on snow
-- [ ] babbling brook
 - [ ] barking dogs / sniffing dogs
 - [ ] sizzling food
 - [ ] ocean waves
 - [ ] electric sounds
 - [ ] rapids
-- [ ] city sounds
-- [ ] different colors of noise
+- [ ] fan
+
+#### backyard
+- [x] chimes
+- [x] thunder
+- [x] wind
+- [x] rain
+- [x] cicada
+- [ ] brook
+
+###
+
+#### urban sounds
+- [ ] cars
+- [ ] people talking
+
+#### colors of noise
