@@ -7,7 +7,7 @@ let playPause = (audio, button,image) => {
             isPlaying = false;
             image.style.opacity = "0.5";
         } else {
-            audio.play();
+            audio.fade(0, 1, 3000, audio.play());
             isPlaying = true;
             image.style.opacity = "0.9";
         }
