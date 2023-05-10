@@ -69,12 +69,15 @@ const volumeThree = document.createElement("input");
 //? icon storage
 iconOne.src = "./img/lightning.png";
 iconOne.alt = "lightning";
+iconOne.style.opacity = "0.5";
 buttonOne.appendChild(iconOne);
 iconTwo.src = "./img/rainy.png";
 iconTwo.alt = "rain";
+iconTwo.style.opacity = "0.5";
 buttonTwo.appendChild(iconTwo);
 iconThree.src = "./img/wind.png";
 iconThree.alt = "wind";
+iconThree.style.opacity = "0.5";
 buttonThree.appendChild(iconThree);
 
 //? volume control storage
