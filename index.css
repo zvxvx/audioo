@@ -101,7 +101,7 @@ img {
     align-items: center;
 }
 .playlist img {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 .titlelogo {
     z-index: 1;
@@ -164,9 +164,6 @@ a {
 }
 /*!media*/
 @media only screen and (max-width: 810px) {
-    .faq-question {
-        display: block;
-    }
     #about, #faq, #playlists {
         max-width: 600px;
         min-width: auto;
@@ -187,5 +184,8 @@ a {
     }
     .container {
         width: 80%;
+    }
+    .faq-question {
+        display: block;
     }
 }
