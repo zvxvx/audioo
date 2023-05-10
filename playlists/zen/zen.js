@@ -3,13 +3,14 @@ let playPause = (audio, button,image) => {
     let isPlaying = false;
     button.addEventListener("click", () => {
         if (isPlaying) {
-            audio.pause();
+            audio.fade(1, 0, 1000);
             isPlaying = false;
             image.style.opacity = "0.5";
         } else {
-            audio.fade(0, 1, 3000, audio.play());
+            audio.play();
+            audio.fade(0, 1, 3000);
             isPlaying = true;
-            image.style.opacity = "0.8";
+            image.style.opacity = "1";
         }
     });
 };

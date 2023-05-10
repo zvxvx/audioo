@@ -3,7 +3,7 @@ let playPause = (audio, button,image) => {
     let isPlaying = false;
     button.addEventListener("click", () => {
         if (isPlaying) {
-            audio.fade(1, 0, 1000);
+            audio.pause();
             isPlaying = false;
             image.style.opacity = "0.5";
         } else {
@@ -78,32 +78,6 @@ const volumeFive = document.createElement("input");
 const buttonSix = document.createElement("button");
 const volumeSix = document.createElement("input");
 
-//? icon storage
-iconOne.src = "/img/lightning.png";
-iconOne.alt = "lightning";
-iconOne.style.opacity = "0.5";
-buttonOne.appendChild(iconOne);
-iconTwo.src = "/img/rainy.png";
-iconTwo.alt = "rain";
-iconTwo.style.opacity = "0.5";
-buttonTwo.appendChild(iconTwo);
-iconThree.src = "/img/wind.png";
-iconThree.alt = "wind";
-iconThree.style.opacity = "0.5";
-buttonThree.appendChild(iconThree);
-iconFour.src = "./img/chimes.png";
-iconFour.alt = "chimes";
-iconFour.style.opacity = "0.5";
-buttonFour.appendChild(iconFour);
-iconFive.src = "./img/insect.png";
-iconFive.alt = "insect";
-iconFive.style.opacity = "0.5";
-buttonFive.appendChild(iconFive);
-iconSix.src = "./img/water.png";
-iconSix.alt = "water";
-iconSix.style.opacity = "0.5";
-buttonSix.appendChild(iconSix);
-
 //? volume control storage
 volumeGen(volumeOne);
 volumeGen(volumeTwo);
@@ -158,38 +132,64 @@ containers.appendChild(containerFour);
 containers.appendChild(containerFive);
 containers.appendChild(containerSix);
 
+//? icon storage
+iconOne.src = "./img/bowl.png";
+iconOne.alt = "bowl";
+iconOne.style.opacity = "0.5";
+buttonOne.appendChild(iconOne);
+iconTwo.src = "./img/monk.png";
+iconTwo.alt = "monk";
+iconTwo.style.opacity = "0.5";
+buttonTwo.appendChild(iconTwo);
+iconThree.src = "./img/wave.png";
+iconThree.alt = "wave";
+iconThree.style.opacity = "0.5";
+buttonThree.appendChild(iconThree);
+iconFour.src = "./img/bird.png";
+iconFour.alt = "bird";
+iconFour.style.opacity = "0.5";
+buttonFour.appendChild(iconFour);
+iconFive.src = "./img/bell.png";
+iconFive.alt = "bell";
+iconFive.style.opacity = "0.5";
+buttonFive.appendChild(iconFive);
+iconSix.src = "./img/tone.png";
+iconSix.alt = "wind";
+iconSix.style.opacity = "0.5";
+buttonSix.appendChild(iconSix);
+
 //? audio 1 start
-let one = audioGen("/audio/one-thunder.mp3");
+let one = audioGen("./audio/one-drone.mp3");
 playPause(one, buttonOne, iconOne);
 volumeControl(one, volumeOne);
 //?audio 1 end
 
 //? audio 2 start
-let two = audioGen("/audio/two-rain.mp3");
+let two = audioGen("./audio/two-mallet.mp3");
 playPause(two, buttonTwo, iconTwo);
 volumeControl(two, volumeTwo);
 //?audio 2 end
 
 //? audio 3 start
-let three = audioGen("/audio/three-wind.mp3");
+let three = audioGen("./audio/three-pink.mp3");
 playPause(three, buttonThree, iconThree);
 volumeControl(three, volumeThree);
 //?audio 3 end
 
 //? audio 4 start
-let four = audioGen("./audio/four-chimes.mp3");
+let four = audioGen("./audio/four-brown.mp3");
 playPause(four, buttonFour, iconFour);
 volumeControl(four, volumeFour);
 //?audio 4 end
 
 //? audio 5 start
-let five = audioGen("./audio/five-insects.mp3");
+let five = audioGen("./audio/five-phase.mp3");
 playPause(five, buttonFive, iconFive);
 volumeControl(five, volumeFive);
 //?audio 5 end
 
 //? audio 6 start
-let six = audioGen("./audio/six-water.mp3");
+let six = audioGen("./audio/six-beat.mp3");
 playPause(six, buttonSix, iconSix);
 volumeControl(six, volumeSix);
 //?audio 6 end

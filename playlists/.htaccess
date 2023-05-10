@@ -1,6 +1,0 @@
-AuthType Digest
-AuthName "Protected by audioo"
-AuthDigestDomain /
-AuthUserFile ./.htpasswd
-Require user admin
-Satisfy All
