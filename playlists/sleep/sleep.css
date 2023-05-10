@@ -5,9 +5,9 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #392B3B;
+    background-color: #1E2C33;
     align-items: center;
-    color: #283030;
+    color: #F7F7FF;
 }
 footer {
     display: flex;
@@ -18,8 +18,8 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #a5b2b2;
-    box-shadow: 0 0 14px #492f53;
+    background-color: #586F7C;
+    box-shadow: 0 0 14px #1F1F1F;
     padding: 5px;
 }
 button {
@@ -31,7 +31,7 @@ input[type="range"] {
     width: 100%;
     -webkit-appearance: none;
     height: 30px;
-    background: #9590A8;
+    background: #586F7C;
     outline: none;
     opacity: 0.7;
     border-radius: 2px;
@@ -40,14 +40,14 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 35px;
     height: 35px;
-    background: #cedfdf;
+    background: #B8DBD9;
     border-radius: 2px;
     border: 1px #9590A8 solid;
 }
 input[type="range"]::-moz-range-thumb {
     width: 35px;
     height: 35px;
-    background: #cedfdf;
+    background: #B8DBD9;
     border-radius: 2px;
     border: 1px #9590A8 solid;
   }
@@ -67,7 +67,7 @@ h1 {
     width: 600px;
     height: 420px;
     margin-top: -70px;
-    margin-bottom: -70px;
+    margin-bottom: -120px;
 }
 .containers {
     display: flex;
@@ -75,6 +75,7 @@ h1 {
     max-width: 800px;
     justify-content: center;
     margin-top: -40px;
+    margin-bottom: 40px;
 } 
 .container {
     display: flex;
@@ -98,11 +99,22 @@ h1 {
     padding: 0px;
 }
 footer a {
-    color: #283030;
+    color: #F7F7FF;
     text-decoration: none;
 }
+.titlelogo {
+    z-index: 1;
+}
+.titlelogo p {
+    margin-top:-30px;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: -55px;
+    text-shadow: 1px 1px 1px #7f6bac;
+    border-radius: 0.2em;
+}
 #about {
-    background-color: #a5b2b2;
+    background-color: #2D434D;
     margin-top: 0px;
     max-width: 700px;
     min-width: 700px;
@@ -111,7 +123,7 @@ footer a {
     border-radius: 0.5em;
 }
 a {
-    color: #283030;
+    color: #F7F7FF;
     font-weight: bold;
     text-decoration: underline;
 }

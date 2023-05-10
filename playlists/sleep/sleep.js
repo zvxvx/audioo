@@ -3,7 +3,7 @@ let playPause = (audio, button,image) => {
     let isPlaying = false;
     button.addEventListener("click", () => {
         if (isPlaying) {
-            audio.pause();
+            audio.stop();
             isPlaying = false;
             image.style.opacity = "0.5";
         } else {
@@ -133,27 +133,27 @@ containers.appendChild(containerFive);
 containers.appendChild(containerSix);
 
 //? icon storage
-iconOne.src = "./img/bowl.png";
+iconOne.src = "./img/one.png";
 iconOne.alt = "bowl";
 iconOne.style.opacity = "0.5";
 buttonOne.appendChild(iconOne);
-iconTwo.src = "./img/monk.png";
+iconTwo.src = "./img/two.png";
 iconTwo.alt = "monk";
 iconTwo.style.opacity = "0.5";
 buttonTwo.appendChild(iconTwo);
-iconThree.src = "./img/wave.png";
+iconThree.src = "./img/three.png";
 iconThree.alt = "wave";
 iconThree.style.opacity = "0.5";
 buttonThree.appendChild(iconThree);
-iconFour.src = "./img/bird.png";
+iconFour.src = "./img/brownian.png";
 iconFour.alt = "bird";
 iconFour.style.opacity = "0.5";
 buttonFour.appendChild(iconFour);
-iconFive.src = "./img/bell.png";
+iconFive.src = "./img/pink.png";
 iconFive.alt = "bell";
 iconFive.style.opacity = "0.5";
 buttonFive.appendChild(iconFive);
-iconSix.src = "./img/tone.png";
+iconSix.src = "./img/white.png";
 iconSix.alt = "wind";
 iconSix.style.opacity = "0.5";
 buttonSix.appendChild(iconSix);
@@ -165,13 +165,13 @@ volumeControl(one, volumeOne);
 //?audio 1 end
 
 //? audio 2 start
-let two = audioGen("./audio/two-mallet.mp3");
+let two = audioGen("./audio/two-phase.mp3");
 playPause(two, buttonTwo, iconTwo);
 volumeControl(two, volumeTwo);
 //?audio 2 end
 
 //? audio 3 start
-let three = audioGen("./audio/three-pink.mp3");
+let three = audioGen("./audio/three-pulse.mp3");
 playPause(three, buttonThree, iconThree);
 volumeControl(three, volumeThree);
 //?audio 3 end
@@ -183,13 +183,13 @@ volumeControl(four, volumeFour);
 //?audio 4 end
 
 //? audio 5 start
-let five = audioGen("./audio/five-phase.mp3");
+let five = audioGen("./audio/five-pink.mp3");
 playPause(five, buttonFive, iconFive);
 volumeControl(five, volumeFive);
 //?audio 5 end
 
 //? audio 6 start
-let six = audioGen("./audio/six-beat.mp3");
+let six = audioGen("./audio/six-white.mp3");
 playPause(six, buttonSix, iconSix);
 volumeControl(six, volumeSix);
 //?audio 6 end

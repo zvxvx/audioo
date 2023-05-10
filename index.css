@@ -66,7 +66,7 @@ img {
     width: 600px;
     height: 420px;
     margin-top: -70px;
-    margin-bottom: -60px;
+    margin-bottom: -115px;
 }
 .containers {
     display: flex;
@@ -170,12 +170,9 @@ a {
     .faq-question {
         display: block;
     }
-    #about, #faq {
+    #about, #faq, #playlists {
         max-width: 600px;
         min-width: auto;
-    }
-    #playlists {
-        min-width: 600px;
     }
     .container {
         width: 40%;
