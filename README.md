@@ -3,22 +3,21 @@
 - [ ] support light and dark mode
 - [x] add an about page
 - [x] add a faq page
-- [ ] tabs for different sound groups
-- [ ] each sound group is to have its own theme
+- [x] tabs for different sound groups
+- [x] each sound group is to have its own theme
 - [x] add 'if no sound' in faq
 - [x] have about and faq on the same page as whatever audio is playing.
 - [x] make mobile view more malleable
-- [ ] refine logo
+- [x] refine logo
+- [ ] kill/resume button?
 
 
-#### SOUNDS TO ADD
-- [ ] crickets
+#### SOUNDS TO CONSIDER
 - [ ] feet crunching on snow
-- [ ] babbling brook
-- [ ] barking dogs / sniffing dogs
-- [ ] sizzling food
-- [ ] ocean waves
+- [x] ocean waves
 - [ ] electric sounds
 - [ ] rapids
-- [ ] city sounds
-- [ ] different colors of noise
+
+#### urban sounds
+- [ ] cars
+- [ ] people talking

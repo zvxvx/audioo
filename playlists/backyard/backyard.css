@@ -5,9 +5,9 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #2c2936;
+    background-color: #2e3327;
     align-items: center;
-    color: #d6cbef;
+    color: #FFF1E0;
 }
 footer {
     display: flex;
@@ -18,22 +18,20 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #af9bdc;
-    color: #1d1728;
+    background-color: #58503f;
     padding: 5px;
-    box-shadow: 0 0 10px #414141;
+    box-shadow: 0 0 14px #262016;
 }
 button {
     background-color: transparent;
     border: transparent;
-    margin-top: -8px;
     -webkit-tap-highlight-color: transparent;
 }
 input[type="range"] {
     width: 100%;
     -webkit-appearance: none;
     height: 20px;
-    background: #ab9bd0;
+    background: #606C38;
     outline: none;
     opacity: 0.7;
     border-radius: 2px;
@@ -42,28 +40,34 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 35px;
     height: 35px;
-    background: #f0c6fc;
+    background: #aeb19a;
     border-radius: 2px;
-    border: 1px #ded2fa solid;
+    border: 1px #283618 solid;
 }
 input[type="range"]::-moz-range-thumb {
     width: 35px;
     height: 35px;
-    background: #f0c6fc;
+    background: #FEFAE0;
     border-radius: 2px;
-    border: 1px #ded2fa solid;
+    border: 1px #283618 solid;
   }
 img {
     width: 150px;
     height: 150px;
     padding-bottom: 20px;
 }
+h1 {
+    font-size: 2em;
+    text-decoration: underline;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 .logo {
-    background: url("./img/audiologo.svg") no-repeat center center / cover;
+    background: url("/img/audiologo.svg") no-repeat center center / cover;
     width: 600px;
     height: 420px;
     margin-top: -70px;
-    margin-bottom: -112px;
+    margin-bottom: -120px;
 }
 .containers {
     display: flex;
@@ -86,22 +90,17 @@ img {
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 50px;
+/*     border: 1px red solid; */
 }
-#playlists {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.icon {
+    width: 30px;
+    height: 19.7px;
+    margin-bottom: -5px;
+    padding: 0px;
 }
-.playlist {
-    display: flex;
-    width: 220px;
-    height:200px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.playlist img {
-    opacity: 0.8;
+footer a {
+    color: #FFF1E0;
+    text-decoration: none;
 }
 .titlelogo {
     z-index: 1;
@@ -114,57 +113,24 @@ img {
     text-shadow: 1px 1px 1px #7f6bac;
     border-radius: 0.2em;
 }
-.icon {
-    width: 30px;
-    height: 19.7px;
-    margin-bottom: -5px;
-    padding: 0px;
-}
-footer a, nav a {
-    color: #1d1728;
-    text-decoration: none;
-}
-#about, #faq, #playlists {
-    background-color: #23202b;
+#about {
+    background-color: #58503f;
+    color: #FFF1E0;
     margin-top: 0px;
     max-width: 700px;
     min-width: 700px;
     padding: 2em;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     border-radius: 0.5em;
 }
-.faq-answer, .faq-question {
-    padding: 0.5em;
-    border-radius: 0.2em;
-}
-.faq-question {
-    display: inline-block;
-    background-color: #af9bdc;
-    color: #1b1722;
-    margin-bottom: 0px;
-}
-.faq-answer {
-    border:1px #675888 solid;
-    box-shadow: 3px 3px 1px #675888;
-    margin-bottom: 20px;
-    margin-top: 5px;
-}
-ul.req {
-    border:1px #675888 solid;
-    box-shadow: 4px 4px 1px #675888;
-    padding-left: 1.3em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin-top: 5px;
-}
 a {
-    color: #d6cbef;
+    color: #FFF1E0;
     font-weight: bold;
     text-decoration: underline;
 }
 /*!media*/
 @media only screen and (max-width: 810px) {
-    #about, #faq, #playlists {
+    #about {
         max-width: 600px;
         min-width: auto;
     }
@@ -178,14 +144,11 @@ a {
         margin-top: -130px;
         margin-bottom: -120px;
     }
-    #about, #faq, #playlists {
+    #about {
         max-width: 400px;
         min-width: 200px;
     }
     .container {
         width: 80%;
-    }
-    .faq-question {
-        display: block;
     }
 }
