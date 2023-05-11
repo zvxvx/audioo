@@ -67,15 +67,15 @@ const buttonThree = document.createElement("button");
 const volumeThree = document.createElement("input");
 
 //? icon storage
-iconOne.src = "./img/lightning.png";
+iconOne.src = "./img/bolt.png";
 iconOne.alt = "lightning";
 iconOne.style.opacity = "0.5";
 buttonOne.appendChild(iconOne);
-iconTwo.src = "./img/rainy.png";
+iconTwo.src = "./img/rain.png";
 iconTwo.alt = "rain";
 iconTwo.style.opacity = "0.5";
 buttonTwo.appendChild(iconTwo);
-iconThree.src = "./img/wind.png";
+iconThree.src = "./img/windy.png";
 iconThree.alt = "wind";
 iconThree.style.opacity = "0.5";
 buttonThree.appendChild(iconThree);
