@@ -32,7 +32,7 @@ button {
 input[type="range"] {
     width: 100%;
     -webkit-appearance: none;
-    height: 30px;
+    height: 20px;
     background: #ab9bd0;
     outline: none;
     opacity: 0.7;
@@ -42,14 +42,14 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 35px;
     height: 35px;
-    background: #c3aef5;
+    background: #f0c6fc;
     border-radius: 2px;
     border: 1px #ded2fa solid;
 }
 input[type="range"]::-moz-range-thumb {
     width: 35px;
     height: 35px;
-    background: #c3aef5;
+    background: #f0c6fc;
     border-radius: 2px;
     border: 1px #ded2fa solid;
   }
@@ -63,7 +63,7 @@ img {
     width: 600px;
     height: 420px;
     margin-top: -70px;
-    margin-bottom: -115px;
+    margin-bottom: -112px;
 }
 .containers {
     display: flex;
