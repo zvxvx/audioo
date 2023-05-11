@@ -153,7 +153,7 @@ iconFive.src = "./img/pink.png";
 iconFive.alt = "bell";
 iconFive.style.opacity = "0.5";
 buttonFive.appendChild(iconFive);
-iconSix.src = "./img/white.png";
+iconSix.src = "./img/fan.png";
 iconSix.alt = "wind";
 iconSix.style.opacity = "0.5";
 buttonSix.appendChild(iconSix);
@@ -189,7 +189,7 @@ volumeControl(five, volumeFive);
 //?audio 5 end
 
 //? audio 6 start
-let six = audioGen("./audio/six-white.mp3");
+let six = audioGen("./audio/six-fan.mp3");
 playPause(six, buttonSix, iconSix);
 volumeControl(six, volumeSix);
 //?audio 6 end
