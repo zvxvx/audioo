@@ -151,11 +151,12 @@ footer a, nav a {
 }
 ul.req {
     border:1px #675888 solid;
-    box-shadow: 4px 4px 1px #675888;
+    box-shadow: 3px 3px 1px #675888;
     padding-left: 1.3em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-top: 5px;
+    border-radius: 0.2em;
 }
 a {
     color: #d6cbef;
