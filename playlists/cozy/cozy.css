@@ -15,10 +15,9 @@ footer {
     align-items: center;
     bottom: 0;
     width: 100%;
+    color: #bfabe6;
     padding: 5px;
-    position:static;
-    color: #f2dbfc;
-    padding: 5px;
+
 }
 button {
     background-color: transparent;
@@ -56,7 +55,7 @@ img {
     padding-bottom: 20px;
 }
 .logo {
-    background: url("./img/audiologo.svg") no-repeat center center / cover;
+    background: url("/img/audiologo.svg") no-repeat center center / cover;
     width: 600px;
     height: 420px;
     margin-top: -70px;
