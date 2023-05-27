@@ -86,7 +86,7 @@ img {
 }
 #playlists {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .playlist {
     display: flex;
@@ -136,15 +136,6 @@ footer a {
     margin-bottom: 20px;
     margin-top: 5px;
 }
-ul.req {
-    border: 1px #675888 solid;
-    box-shadow: 3px 3px 1px #675888;
-    padding-left: 1.3em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin-top: 5px;
-    border-radius: 0.2em;
-}
 a {
     color: #d6cbef;
     font-weight: bold;
@@ -164,7 +155,6 @@ a {
     #playlists {
         display: flex;
         flex-wrap: wrap;
-        padding: 13px;
     }
 
 }
@@ -179,6 +169,9 @@ a {
     }
     .container {
         width: 90%;
+    }
+    #faq {
+        margin-bottom:30px;
     }
     .faq-question {
         display: block;
