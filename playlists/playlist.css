@@ -31,7 +31,6 @@ footer {
     background-color: #bca9e6;
     color: #171e28;
     padding: 5px;
-    box-shadow: 0 0 10px #bca9e6;
 }
 .logo {
     background: url("/img/audiologo.svg") no-repeat center center / cover;
@@ -113,7 +112,6 @@ a {
         background-color: #bca9e6;
         color: #1d1728;
         padding: 5px;
-        box-shadow: 0 0 10px #b49de8;
         list-style: none;
         gap:50px;
     }

@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "gregory pappas",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.29.3"

@@ -19,7 +19,6 @@ footer {
     background-color: #e9acac;
     color: #171e28;
     padding: 5px;
-    box-shadow: 0 0 10px #fc7171;
 }
 button {
     background-color: transparent;
@@ -85,66 +84,15 @@ img {
     padding-left: 10px;
     padding-bottom: 50px;
 }
-#playlists {
-    display: flex;
-    justify-content: space-around;
-}
-.playlist {
-    display: flex;
-    width: 220px;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-}
-.playlist img {
-    opacity: 0.8;
-}
 .icon {
     width: 30px;
-    height: 19.7px;
+    height: 20px;
     margin-bottom: -5px;
     padding: 0px;
 }
 footer a {
     color: #291f3b;
     text-decoration: none;
-}
-#about,
-#faq,
-#playlists {
-    background-color: #23202b;
-    margin-top: 0px;
-    max-width: 700px;
-    min-width: 700px;
-    padding: 1em;
-    margin-bottom: 20px;
-    border-radius: 0.5em;
-}
-.faq-answer,
-.faq-question {
-    padding: 0.5em;
-    border-radius: 0.2em;
-}
-.faq-question {
-    display: inline-block;
-    background-color: #af9bdc;
-    color: #1b1722;
-    margin-bottom: 0px;
-}
-.faq-answer {
-    border: 1px #675888 solid;
-    box-shadow: 3px 3px 1px #675888;
-    margin-bottom: 20px;
-    margin-top: 5px;
-}
-ul.req {
-    border: 1px #675888 solid;
-    box-shadow: 3px 3px 1px #675888;
-    padding-left: 1.3em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin-top: 5px;
-    border-radius: 0.2em;
 }
 a {
     color: #d6cbef;
@@ -155,34 +103,14 @@ a {
     display: none;
 }
 /*!media*/
-@media only screen and (max-width: 810px) {
-    #about,
-    #faq,
-    #playlists {
-        max-width: 660px;
-        min-width: auto;
-    }
-    #playlists {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 13px;
-    }
-
-}
 @media only screen and (max-width: 550px) {
     .logo {
         max-width: 350px;
         margin-top: -130px;
         margin-bottom: -120px;
     }
-    #playlists, #playlist-text {
-        display: none;
-    }
     .container {
         width: 90%;
-    }
-    .faq-question {
-        display: block;
     }
     #mobile-menu {
         display: block;
@@ -199,9 +127,8 @@ a {
         background-color: #e9acac;
         color: #1d1728;
         padding: 5px;
-        box-shadow: 0 0 10px #e9acac;
         list-style: none;
-        gap:50px;
+        gap: 50px;
     }
     .pl-mobile {
         width: 40px;
