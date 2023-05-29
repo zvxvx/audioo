@@ -50,10 +50,14 @@ input[type="range"]::-moz-range-thumb {
     border-radius: 2px;
     border: 1px #ded2fa solid;
 }
-img {
+.containers img, .playlist img {
     width: 150px;
     height: 150px;
     padding-bottom: 20px;
+}
+h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 0px #7c7096;
 }
 .logo {
     background: url("./img/audiologo.svg") no-repeat center center / cover;
@@ -84,7 +88,12 @@ img {
     padding-left: 10px;
     padding-bottom: 50px;
 }
+.p-header {
+    position:absolute;
+    top:-50px;
+}
 #playlists {
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -100,7 +109,7 @@ img {
 }
 .icon {
     width: 30px;
-    height: 19.7px;
+    height: 20px;
     margin-bottom: -5px;
     padding: 0px;
 }
