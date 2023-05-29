@@ -16,7 +16,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 5px;
-    position:static;
+    position: static;
     color: #f2dbfc;
     padding: 5px;
 }
@@ -115,14 +115,14 @@ footer a {
     margin-top: 0px;
     max-width: 700px;
     min-width: 700px;
-    padding: 1em;
+    padding: 16px;
     margin-bottom: 20px;
-    border-radius: 0.5em;
+    border-radius: 5px;
 }
 .faq-answer,
 .faq-question {
-    padding: 0.5em;
-    border-radius: 0.2em;
+    padding: 8px;
+    border-radius: 5px;
 }
 .faq-question {
     display: inline-block;
@@ -156,7 +156,6 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
-
 }
 @media only screen and (max-width: 550px) {
     .logo {
@@ -164,14 +163,15 @@ a {
         margin-top: -130px;
         margin-bottom: -120px;
     }
-    #playlists, #playlist-text {
+    #playlists,
+    #playlist-text {
         display: none;
     }
     .container {
         width: 90%;
     }
     #faq {
-        margin-bottom:30px;
+        margin-bottom: 30px;
     }
     .faq-question {
         display: block;
@@ -192,7 +192,7 @@ a {
         color: #1d1728;
         padding: 5px;
         list-style: none;
-        gap:50px;
+        gap: 50px;
     }
     .pl-mobile {
         width: 40px;
