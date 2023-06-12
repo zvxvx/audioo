@@ -10,6 +10,7 @@
         />
         <link rel="stylesheet" href="./index.css" />
         <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
         <script type="module" src="./audio.index.js" defer></script>
         <title>audioo: focus. relax. forever.</title>
     </head>
@@ -35,7 +36,9 @@
             </div>
             <div class="playlist">
                 <a href="./playlists/cozy/index.html"
-                    ><img src="./playlists/cozy/img/fireplace.png" alt="cozy playlist"
+                    ><img
+                        src="./playlists/cozy/img/fireplace.png"
+                        alt="cozy playlist"
                 /></a>
             </div>
         </section>
@@ -43,7 +46,8 @@
             <p class="update">
                 <span style="text-decoration: underline">26 May 2023</span>
                 <br />
-                Cozy playlist has been added. Also added a menu bar for mobile devices for easy navigation.
+                Cozy playlist has been added. Also added a menu bar for mobile
+                devices for easy navigation.
             </p>
             <p class="faq-question">What is audioo?</p>
             <p class="faq-answer">
@@ -57,7 +61,9 @@
                 Outside of making sure the volume is up, having the phone on
                 silent mode can mute the sound on the website.
             </p>
-            <p class="faq-question">Can I make an audio request, or just say hi?</p>
+            <p class="faq-question"
+                >Can I make an audio request, or just say hi?</p
+            >
             <p class="faq-answer">
                 Of course. Use the
                 <a href="https://forms.gle/5L3UJXUHLQ5rxdog8" target="_blank"
@@ -68,9 +74,27 @@
         </section>
         <div id="mobile-menu">
             <ul>
-                <li><a href="./index.html"><img src="./img/home.png" class="pl-mobile" alt="home"></a></li>
-                <li><a href="./playlists/index.html"><img src="./img/music.png" class="pl-mobile" alt="playlists"></a></li>                
-                <li><a href="https://ko-fi.com/pappas"><img src="./img/heart.png" class="pl-mobile" alt="donate"></a></li>
+                <li
+                    ><a href="./index.html"
+                        ><img
+                            src="./img/home.png"
+                            class="pl-mobile"
+                            alt="home" /></a
+                ></li>
+                <li
+                    ><a href="./playlists/index.html"
+                        ><img
+                            src="./img/music.png"
+                            class="pl-mobile"
+                            alt="playlists" /></a
+                ></li>
+                <li
+                    ><a href="https://ko-fi.com/pappas"
+                        ><img
+                            src="./img/heart.png"
+                            class="pl-mobile"
+                            alt="donate" /></a
+                ></li>
             </ul>
         </div>
         <footer>
@@ -80,5 +104,12 @@
                 >gregory pappas</a
             >
         </footer>
+        <script>
+            window.addEventListener("load", () => {
+                if ("serviceWorker" in navigator) {
+                    navigator.serviceWorker.register("service-worker.js");
+                }
+            });
+        </script>
     </body>
 </html>
