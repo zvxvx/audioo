@@ -105,11 +105,36 @@
             >
         </footer>
         <script>
-            window.addEventListener("load", () => {
-                if ("serviceWorker" in navigator) {
-                    navigator.serviceWorker.register("service-worker.js");
-                }
-            });
+            // Check if the browser supports service workers
+            if ("serviceWorker" in navigator) {
+                // Register the service worker
+                navigator.serviceWorker
+                    .register("/service-worker.js")
+                    .then(() => {
+                        console.log("Service worker registered");
+                    })
+                    .catch((error) => {
+                        console.error(
+                            "Error registering service worker:",
+                            error
+                        );
+                    });
+
+                // Listen for the "beforeinstallprompt" event
+                window.addEventListener("beforeinstallprompt", (event) => {
+                    // Show the install prompt
+                    event.preventDefault();
+                    const prompt = event;
+                    prompt.prompt();
+                    prompt.userChoice.then((choice) => {
+                        if (choice.outcome === "accepted") {
+                            console.log("User accepted the install prompt");
+                        } else {
+                            console.log("User dismissed the install prompt");
+                        }
+                    });
+                });
+            }
         </script>
     </body>
 </html>
