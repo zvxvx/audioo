@@ -39,7 +39,7 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 35px;
     height: 35px;
-    background: #d2eefb;
+    background: #cfb693;
     border-radius: 2px;
     border: 1px #0e2b3a solid;
 }
