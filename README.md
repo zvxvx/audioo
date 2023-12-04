@@ -1,3 +1,2 @@
-#audioo
-- Remake in Vite.
-- Complete overhaul of the codebase.
+# audioo
+This is a total overhaul of [audioo](http://audioo.org) from using HTML, CSS, and JS to React, Vite, and Typescript.
