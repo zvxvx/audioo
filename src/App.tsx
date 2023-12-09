@@ -8,7 +8,7 @@ import wind from "./assets/audio/three-wind.mp3";
 import windImg from "./assets/img/wind.png?icon";
 function App() {
   return (
-    <div className="h-[100dvh] text-slate-200">
+    <div className="h-[100dvh] bg-purple-950/30 text-slate-200">
       <img src={logo} alt="audioo" className="w-1/2 mx-auto" />
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 justify-center">
         <Audio url={thunder} img={lightning} />
