@@ -1,7 +1,18 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from "vite";
+import { imagetools } from "vite-imagetools";
+import react from "@vitejs/plugin-react-swc";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [
+    react(),
+    imagetools({
+      defaultDirectives: (url) => {
+        if (url.searchParams.has("audio")) {
+          return new URLSearchParams("w=200&format=webp");
+        }
+        return new URLSearchParams();
+      },
+    }),
+  ],
+});
