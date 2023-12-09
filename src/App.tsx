@@ -1,15 +1,15 @@
-import {Howl, Howler} from 'howler';
+import { Howl, Howler } from 'howler';
+import logo from './assets/img/audiologo.svg';
+import lightning from './assets/img/bolt.png?audio';
 
 function App() {
 
 
   return (
-    <>
-      <div className="h-[100dvh] bg-purple-950/20">
-        <p className="text-7xl text-white text-slate-300 font-bold text-center">audioo</p>
-        <p className="text-white text-slate-300 font-bold text-center">is returning soon...</p>
-      </div>
-    </>
+    <div className='h-[100dvh] flex flex-col items-center bg-purple-950/20 text-slate-200'>
+      <img src={logo} alt="audioo" className='w-1/2' />
+      <button><img src={lightning} alt="lightning" /></button>
+    </div>
   )
 }
 
