@@ -9,6 +9,7 @@ type AudioProps = {
 const Audio = ({ url, img }: AudioProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(0.5);
+  
   function handlePlaying() {
     setIsPlaying(!isPlaying);
     !isPlaying ? false : true;
@@ -27,8 +28,8 @@ const Audio = ({ url, img }: AudioProps) => {
         height={0}
       />
       <button onClick={handlePlaying}>
-        <div className={`opacity-${isPlaying ? 100 : 50}`}>
-          <img src={img} alt="icon" />
+        <div>
+          <img src={img} alt="icon" style={{ opacity: `${volume}` }} />
         </div>
       </button>
       <input
