@@ -1,18 +1,23 @@
-import { useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 
-const Audio = ({ url, img }) => {
+type AudioProps = {
+  url: string,
+  img: string
+}
+
+const Audio = ({ url, img }: AudioProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(0.5);
   function handlePlaying() {
     setIsPlaying(!isPlaying);
     !isPlaying ? false : true;
   }
-  function changeVolume(e) {
+  function changeVolume(e: ChangeEvent<HTMLInputElement>) {
     setVolume(Number(e.target.value));
   }
   return (
-    <div className="flex flex-col m-5">
+    <div className="mx-auto flex flex-col">
       <ReactPlayer
         url={url}
         loop={true}
