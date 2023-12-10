@@ -1,9 +1,10 @@
 import Audio from "./Audio";
-import { home, backyard } from "./sounds";
+import home from "./assets/playlists/home";
+import backyard from "./assets/playlists/backyard/backyard";
 
 const Backyard = () => {
   return (
-    <>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-center">
       {home.map(({ id, sound, image }) => {
         return (
           <div key={id}>
@@ -18,7 +19,7 @@ const Backyard = () => {
           </div>
         )
       })}
-    </>
+    </div>
   )
 }
 
