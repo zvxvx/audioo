@@ -5,6 +5,7 @@ import Backyard from "./Backyard";
 import Footer from "./Footer";
 import Cozy from "./Cozy";
 import Sleep from "./Sleep";
+import Zen from "./Zen";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/backyard" element={<Backyard />} />
             <Route path="/cozy" element={<Cozy />} />
             <Route path="/sleep" element={<Sleep />} />
+            <Route path="/zen" element={<Zen />} />
           </Routes>
         </div>
         <Footer />
