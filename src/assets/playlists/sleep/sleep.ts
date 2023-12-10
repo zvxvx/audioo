@@ -1,15 +1,15 @@
 import drone from "./audio/one-drone.mp3";
-import droImg from "./img/one.png";
+import droImg from "./img/one.png?icon";
 import phase from "./audio/two-phase.mp3";
-import phaImg from "./img/two.png";
+import phaImg from "./img/two.png?icon";
 import pulse from "./audio/three-pulse.mp3";
-import pulImg from "./img/three.png";
+import pulImg from "./img/three.png?icon";
 import brown from "./audio/four-brown.mp3";
-import broImg from "./img/brownian.png";
+import broImg from "./img/brownian.png?icon";
 import pink from "./audio/five-pink.mp3";
-import pinkImg from "./img/pink.png";
+import pinkImg from "./img/pink.png?icon";
 import fan from "./audio/six-fan.mp3";
-import fanImg from "./img/fan.png";
+import fanImg from "./img/fan.png?icon";
 
 const cozy = [
   {
