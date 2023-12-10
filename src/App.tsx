@@ -4,6 +4,7 @@ import Home from "./Home";
 import Backyard from "./Backyard";
 import News from "./News";
 import Footer from "./Footer";
+import Cozy from "./Cozy";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/backyard" element={<Backyard />} />
+            <Route path="/cozy" element={<Cozy />} />
           </Routes>
         </div>
         <Footer />
