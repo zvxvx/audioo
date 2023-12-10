@@ -1,6 +1,6 @@
 const News = () => {
   return (
-    <div>
+    <div className="bg-slate-950/50">
       <p className="text-2xl uppercase tracking-wide font-bold">News</p>
       <article className="border-t border-purple-300/50">
         <p className="italic text-lg">{new Date(2023, 11, 9).toDateString()}</p>
