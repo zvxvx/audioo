@@ -2,9 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import Backyard from "./Backyard";
-import News from "./News";
 import Footer from "./Footer";
 import Cozy from "./Cozy";
+import Sleep from "./Sleep";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/backyard" element={<Backyard />} />
             <Route path="/cozy" element={<Cozy />} />
+            <Route path="/sleep" element={<Sleep />} />
           </Routes>
         </div>
         <Footer />
