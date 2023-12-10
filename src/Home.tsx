@@ -1,4 +1,5 @@
 import Audio from "./Audio";
+import News from "./News";
 import { home } from "./sounds";
 
 const Home = () => {
