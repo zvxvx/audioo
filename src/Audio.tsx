@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, TouchEvent, useState } from "react";
 import ReactPlayer from "react-player";
 
 type AudioProps = {
@@ -17,6 +17,11 @@ const Audio = ({ url, img }: AudioProps) => {
   function changeVolume(e: ChangeEvent<HTMLInputElement>) {
     setVolume(Number(e.target.value));
   }
+
+  function touchVolume(e: TouchEvent<HTMLInputElement>) {
+    setVolume(Number(e.currentTarget.value));
+  }
+
   return (
     <div className="mx-auto flex flex-col gap-5">
       <ReactPlayer
@@ -69,6 +74,8 @@ const Audio = ({ url, img }: AudioProps) => {
         step={0.01}
         value={volume}
         onChange={changeVolume}
+        onTouchStart={touchVolume}
+        onTouchMove={touchVolume}
       />
     </div>
   );
