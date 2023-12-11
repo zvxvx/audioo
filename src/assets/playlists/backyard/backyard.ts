@@ -7,17 +7,17 @@ import watImg from "./img/water.png?icon";
 
 const backyard = [
   {
-    id: 0,
+    id: 3,
     sound: chimes,
     image: chiImg,
   },
   {
-    id: 1,
+    id: 4,
     sound: insects,
     image: insImg,
   },
   {
-    id: 2,
+    id: 5,
     sound: water,
     image: watImg,
   },
