@@ -9,12 +9,12 @@ const Home = () => {
         {home.map(({ id, sound, image }) => {
           return (
             <div key={id}>
-              <Audio url={sound} img={image} />
+              <Audio url={sound} img={image} id={id} />
             </div>
           )
         })}
       </div>
-      <div className="hidden sm:block">{<News/>}</div>
+      <div className="hidden sm:block">{<News />}</div>
     </>
   )
 }
