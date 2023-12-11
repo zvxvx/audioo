@@ -1,9 +1,9 @@
 <br/>
 <div align="center">
-  <img src="./src/assets/img/logo.svg" align="center">
+  <a href="https://audioo.org"><img src="./src/assets/img/logo.svg" align="center"></a>
   <br/>
   <a href="https://audioo.org" style="font-size: 36px">audioo.org</a>
-  <divalign="center">
+  <div>
     <p>A web app that promotes focus, relaxation, and sleep through playing a variety of sounds.</p>
     <a href="https://github.com/gnprwx/audioo/issues">Report Bug</a><br>
     <a href="https://github.com/gnprwx/audioo/issues">Request Feature</a>
