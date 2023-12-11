@@ -9,10 +9,10 @@ import Zen from "./Zen";
 
 function App() {
   return (
-    <div className="h-[100dvh] bg-purple-950/30 text-slate-200">
+    <div className="h-[100dvh] text-slate-200">
       <div className="mx-auto w-5/6">
         <Header />
-        <div className="bg-slate-950/50 p-5">
+        <div className="flex flex-col items-center bg-slate-950/40">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/backyard" element={<Backyard />} />
