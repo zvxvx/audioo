@@ -3,7 +3,7 @@ import sleep from './assets/playlists/sleep/sleep';
 
 const Sleep = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 p-5">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 pb-5 px-5 justify-center">
       {sleep.map(({ id, sound, image }) => {
         return (
           <div key={id}>
