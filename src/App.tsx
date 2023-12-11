@@ -10,7 +10,7 @@ import Zen from "./Zen";
 function App() {
   return (
     <div className="h-[100dvh] text-slate-200">
-      <div className="mx-auto w-5/6">
+      <div className="mx-auto w-full sm:w-5/6">
         <Header />
         <div className="flex flex-col items-center bg-slate-950/40">
           <Routes>
