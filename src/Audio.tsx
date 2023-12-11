@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import ReactPlayer from "react-player";
+import ReactHowler from 'react-howler';
 
 type AudioProps = {
   id: number,
@@ -21,13 +21,11 @@ const Audio = ({ url, img, id }: AudioProps) => {
 
   return (
     <div className="mx-auto flex flex-col gap-5">
-      <ReactPlayer
-        url={url}
+      <ReactHowler
+        src={url}
         loop={true}
         playing={isPlaying}
         volume={volume}
-        width={0}
-        height={0}
       />
       <button onClick={handlePlaying}>
         <img src={img} alt="icon" style={{ opacity: `${volume}` }} />
@@ -51,7 +49,6 @@ const Audio = ({ url, img, id }: AudioProps) => {
         [&::-webkit-slider-runnable-track]:bg-slate-500
         [&::-webkit-slider-runnable-track]:rounded
 
-
         [&::-moz-range-thumb]:w-6
         [&::-moz-range-thumb]:h-6
         [&::-moz-range-thumb]:appearance-none
@@ -68,7 +65,7 @@ const Audio = ({ url, img, id }: AudioProps) => {
         name="volume"
         min={0}
         max={1}
-        step={0.01}
+        step={0.02}
         value={volume}
         onChange={changeVolume}
       />
