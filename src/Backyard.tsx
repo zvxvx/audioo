@@ -8,14 +8,14 @@ const Backyard = () => {
       {home.map(({ id, sound, image }) => {
         return (
           <div key={id}>
-            <Audio url={sound} img={image} />
+            <Audio url={sound} img={image} id={id} />
           </div>
         )
       })}
       {backyard.map(({ id, sound, image }) => {
         return (
           <div key={id}>
-            <Audio url={sound} img={image} />
+            <Audio url={sound} img={image} id={id} />
           </div>
         )
       })}

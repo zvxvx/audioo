@@ -7,7 +7,7 @@ const Sleep = () => {
       {sleep.map(({ id, sound, image }) => {
         return (
           <div key={id}>
-            <Audio url={sound} img={image} />
+            <Audio url={sound} img={image} id={id} />
           </div>
         )
       })}
