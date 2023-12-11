@@ -1,33 +1,31 @@
 <br/>
-<p align="center">
-  <h1 align="center">audioo</h1>
-
-  <p align="center">
-    A web app that promotes focus, relaxation, and sleep through playing a variety of sounds.
-    <br/>
-    <br/>
+<div align="center">
+  <img src="./src/assets/img/logo.svg" align="center">
+  <br/>
+  <a href="https://audioo.org" style="font-size: 36px">audioo.org</a>
+  <divalign="center">
+    <p>A web app that promotes focus, relaxation, and sleep through playing a variety of sounds.</p>
     <a href="https://github.com/gnprwx/audioo/issues">Report Bug</a><br>
     <a href="https://github.com/gnprwx/audioo/issues">Request Feature</a>
-  </p>
-</p>
+  </div>
+</div>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4987ab74-72a1-4532-8b89-afcafa09123c/deploy-status)](https://app.netlify.com/sites/dainty-cuchufli-2e366e/deploys)
-![Contributors](https://img.shields.io/github/contributors/gnprwx/audioo?color=dark-green) ![Issues](https://img.shields.io/github/issues/gnprwx/audioo) 
+![Netlify Status](https://api.netlify.com/api/v1/badges/4987ab74-72a1-4532-8b89-afcafa09123c/deploy-status)
+![Contributors](https://img.shields.io/github/contributors/gnprwx/audioo?color=dark-green) ![Issues](https://img.shields.io/github/issues/gnprwx/audioo)
 
 ## Table Of Contents
 
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Authors](#authors)
+- [Acknowledgements](#acknowledgements)
 
-## About The Project
+## Preview
 
-![Screen Shot](public/preview.png)
-
+<img src="public/preview.png" width="600px">
 
 ## Built With
 
