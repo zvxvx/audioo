@@ -5,7 +5,7 @@ import home from "./assets/playlists/home";
 const Home = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 p-5 justify-center">
         {home.map(({ id, sound, image }) => {
           return (
             <div key={id}>
@@ -14,7 +14,7 @@ const Home = () => {
           )
         })}
       </div>
-      <News/>
+      <div className="hidden sm:block">{<News/>}</div>
     </>
   )
 }
