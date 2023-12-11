@@ -19,7 +19,9 @@ const Audio = ({ url, img }: AudioProps) => {
   }
 
   function touchVolume(e: TouchEvent<HTMLInputElement>) {
-    setVolume(Number(e.currentTarget.value));
+    if (e.currentTarget instanceof HTMLInputElement) {
+      setVolume(Number(e.currentTarget.value));
+    }
   }
 
   return (
