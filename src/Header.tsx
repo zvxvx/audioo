@@ -12,9 +12,9 @@ const Header = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <img src={logo} alt="audioo" className="w-1/2 mb-5" />
-      <nav className="w-full bg-slate-950/60 rounded-t p-1">
-        <ul className="flex gap-5 justify-center text-lg">
+      <img src={logo} alt="audioo" className="w-1/2 my-5" />
+      <nav className="w-full bg-slate-950/60 rounded-t py-2">
+        <ul className="flex gap-3 justify-center sm:text-xl">
           <li><NavLink to={'/'} className={activeLink}
           >Home</NavLink></li>
           <li><NavLink to={'/backyard'} className={activeLink}
