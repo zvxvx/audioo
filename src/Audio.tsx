@@ -2,11 +2,12 @@ import { ChangeEvent, useState } from "react";
 import ReactPlayer from "react-player";
 
 type AudioProps = {
+  id: number,
   url: string,
   img: string
 }
 
-const Audio = ({ url, img }: AudioProps) => {
+const Audio = ({ url, img, id }: AudioProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(0.5);
 
@@ -62,7 +63,7 @@ const Audio = ({ url, img }: AudioProps) => {
         [&::-moz-range-track]:h-4
         [&::-moz-range-track]:bg-slate-500
         [&::-moz-range-track]:rounded"
-        id="basic-range-slider-usage"
+        id={`${id}`}
         type="range"
         name="volume"
         min={0}
