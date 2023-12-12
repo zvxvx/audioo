@@ -28,7 +28,7 @@ const Audio = ({ url, img, id }: AudioProps) => {
         volume={volume}
       />
       <button onClick={handlePlaying}>
-        <img src={img} alt="icon" className={`${isPlaying && "drop-shadow-[4px_4px_0_rgba(255,255,255,0.3)]"}`} style={{ opacity: `${volume}` }} />
+        <img src={img} alt={`icon ${id}`} className={`${isPlaying && "drop-shadow-[4px_4px_0_rgba(255,255,255,0.3)]"}`} style={{ opacity: `${volume}` }} />
       </button>
       <input
         className="w-full 
@@ -68,7 +68,7 @@ const Audio = ({ url, img, id }: AudioProps) => {
         step={0.01}
         value={volume}
         onChange={changeVolume}
-        aria-label={`${id} volume`}
+        aria-label={`volume ${id}`}
       />
     </div>
   );
