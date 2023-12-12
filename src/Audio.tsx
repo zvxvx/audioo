@@ -28,7 +28,7 @@ const Audio = ({ url, img, id }: AudioProps) => {
         volume={volume}
       />
       <button onClick={handlePlaying}>
-        <img src={img} alt={`icon ${id}`} className={`${isPlaying && "drop-shadow-[4px_4px_0_rgba(255,255,255,0.3)]"}`} style={{ opacity: `${volume}` }} />
+        <img src={img} alt={`icon ${id}`} className={`${isPlaying && "drop-shadow-[4px_4px_0_rgba(255,255,255,0.3)]"}`} style={{ opacity: `${volume}`, width: '100%', aspectRatio: '1/1' }} />
       </button>
       <input
         className="w-full 
