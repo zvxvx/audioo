@@ -40,13 +40,13 @@ const Audio = ({ url, img, id }: AudioProps) => {
         [&::-webkit-slider-thumb]:h-6
         [&::-webkit-slider-thumb]:-mt-1
         [&::-webkit-slider-thumb]:appearance-none
-        [&::-webkit-slider-thumb]:bg-slate-300
+        [&::-webkit-slider-thumb]:bg-gray-400
         [&::-webkit-slider-thumb]:rounded
         [&::-webkit-slider-thumb]:shadow-xl
         
         [&::-webkit-slider-runnable-track]:w-full
         [&::-webkit-slider-runnable-track]:h-4
-        [&::-webkit-slider-runnable-track]:bg-slate-500
+        [&::-webkit-slider-runnable-track]:bg-gray-400/30
         [&::-webkit-slider-runnable-track]:rounded
 
         [&::-moz-range-thumb]:w-6
