@@ -68,6 +68,7 @@ const Audio = ({ url, img, id }: AudioProps) => {
         step={0.01}
         value={volume}
         onChange={changeVolume}
+        aria-label="volume"
       />
     </div>
   );
