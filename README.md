@@ -10,7 +10,6 @@
 </div>
 
 ![Netlify Status](https://api.netlify.com/api/v1/badges/4987ab74-72a1-4532-8b89-afcafa09123c/deploy-status)
-![Contributors](https://img.shields.io/github/contributors/gnprwx/audioo?color=dark-green) ![Issues](https://img.shields.io/github/issues/gnprwx/audioo)
 
 ## Table Of Contents
 
