@@ -10,9 +10,9 @@ import Zen from "./Zen";
 function App() {
   return (
     <div className="min-h-[100dvh]">
-      <div className="mx-auto w-full sm:w-5/6">
+      <div className="mx-auto sm:w-5/6">
         <Header />
-        <div className="flex flex-col items-center bg-slate-950/40">
+        <div className="min-h-full bg-gradient-to-b from-slate-950/20 to-slate-950/60 border-x border-slate-950/10">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/backyard" element={<Backyard />} />
