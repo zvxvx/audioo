@@ -9,7 +9,7 @@ export default defineConfig({
     imagetools({
       defaultDirectives: (url) => {
         if (url.searchParams.has("icon")) {
-          return new URLSearchParams("format=webp");
+          return new URLSearchParams("w=512&h=512&format=webp");
         }
         return new URLSearchParams();
       },
