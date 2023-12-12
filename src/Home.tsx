@@ -1,5 +1,5 @@
 import Audio from "./Audio";
-import News from "./News";
+import Info from "./Info";
 import backyard from "./assets/playlists/backyard/backyard";
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
           )
         })}
       </div>
-      <div className="hidden sm:block">{<News />}</div>
+      <div className="hidden sm:block">{<Info />}</div>
     </>
   )
 }
