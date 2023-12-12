@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
-import Backyard from "./Backyard";
+import Backyard from "./playlists/Backyard";
+import Cozy from "./playlists/Cozy";
+import Sleep from "./playlists/Sleep";
+import Zen from "./playlists/Zen";
 import Footer from "./Footer";
-import Cozy from "./Cozy";
-import Sleep from "./Sleep";
-import Zen from "./Zen";
 
 function App() {
   return (
