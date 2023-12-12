@@ -40,32 +40,32 @@ const Audio = ({ url, img, id }: AudioProps) => {
         [&::-webkit-slider-thumb]:h-6
         [&::-webkit-slider-thumb]:-mt-1
         [&::-webkit-slider-thumb]:appearance-none
-        [&::-webkit-slider-thumb]:bg-slate-300
+        [&::-webkit-slider-thumb]:bg-gray-400
         [&::-webkit-slider-thumb]:rounded
         [&::-webkit-slider-thumb]:shadow-xl
         
         [&::-webkit-slider-runnable-track]:w-full
         [&::-webkit-slider-runnable-track]:h-4
-        [&::-webkit-slider-runnable-track]:bg-slate-500
+        [&::-webkit-slider-runnable-track]:bg-gray-400/30
         [&::-webkit-slider-runnable-track]:rounded
 
         [&::-moz-range-thumb]:w-6
         [&::-moz-range-thumb]:h-6
         [&::-moz-range-thumb]:appearance-none
-        [&::-moz-range-thumb]:bg-slate-300
+        [&::-moz-range-thumb]:bg-gray-400
         [&::-moz-range-thumb]:rounded
         [&::-moz-range-thumb]:shadow-xl
         
         [&::-moz-range-track]:w-full
         [&::-moz-range-track]:h-4
-        [&::-moz-range-track]:bg-slate-500
+        [&::-moz-range-track]:bg-gray-400/30
         [&::-moz-range-track]:rounded"
         id={`${id}`}
         type="range"
         name="volume"
         min={0}
         max={1}
-        step={0.02}
+        step={0.01}
         value={volume}
         onChange={changeVolume}
       />
