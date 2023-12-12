@@ -52,20 +52,20 @@ const Audio = ({ url, img, id }: AudioProps) => {
         [&::-moz-range-thumb]:w-6
         [&::-moz-range-thumb]:h-6
         [&::-moz-range-thumb]:appearance-none
-        [&::-moz-range-thumb]:bg-slate-300
+        [&::-moz-range-thumb]:bg-gray-400
         [&::-moz-range-thumb]:rounded
         [&::-moz-range-thumb]:shadow-xl
         
         [&::-moz-range-track]:w-full
         [&::-moz-range-track]:h-4
-        [&::-moz-range-track]:bg-slate-500
+        [&::-moz-range-track]:bg-gray-400/30
         [&::-moz-range-track]:rounded"
         id={`${id}`}
         type="range"
         name="volume"
         min={0}
         max={1}
-        step={0.02}
+        step={0.01}
         value={volume}
         onChange={changeVolume}
       />
