@@ -9,7 +9,7 @@ import Zen from "./Zen";
 
 function App() {
   return (
-    <div className="h-[100dvh] text-slate-200">
+    <div className="h-[100dvh]">
       <div className="mx-auto w-full sm:w-5/6">
         <Header />
         <div className="flex flex-col items-center bg-slate-950/40">
