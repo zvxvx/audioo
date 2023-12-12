@@ -14,6 +14,7 @@ function App() {
         <Header />
         <div className="min-h-full bg-gradient-to-b from-slate-950/20 to-slate-950/60 border-x border-slate-950/10">
           <Routes>
+            <Route path="/index.html" element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/backyard" element={<Backyard />} />
             <Route path="/cozy" element={<Cozy />} />
