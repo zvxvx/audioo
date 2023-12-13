@@ -3,8 +3,8 @@ import Info from "./Info";
 import backyard from "./assets/playlists/backyard/backyard";
 
 const Home = () => {
-  document.documentElement.style.setProperty('background', '#40535e');
-  document.documentElement.style.setProperty('color', '#f2b5aa');
+  document.documentElement.style.setProperty('background', '#27414e');
+  document.documentElement.style.setProperty('color', 'rgb(255, 196, 183)');
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 pb-5 px-5 justify-center">
