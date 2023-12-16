@@ -7,7 +7,7 @@ const Home = () => {
   document.documentElement.style.setProperty('color', 'rgb(255, 196, 183)');
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 pb-5 px-5 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 pb-5 px-5 justify-center shadow-xl">
         {backyard.slice(0, 3).map(({ id, sound, image }) => {
           return (
             <div key={id}>
