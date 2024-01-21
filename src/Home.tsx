@@ -7,7 +7,7 @@ const Home = () => {
   document.documentElement.style.setProperty('color', 'rgb(255, 196, 183)');
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 pb-5 px-5 justify-center shadow-xl">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 pb-5 px-5 justify-center">
         {backyard.slice(0, 3).map(({ id, sound, image }) => {
           return (
             <div key={id}>
@@ -16,7 +16,7 @@ const Home = () => {
           )
         })}
       </div>
-      <div className="hidden sm:block">{<Info />}</div>
+      <div>{<Info />}</div>
     </>
   )
 }
