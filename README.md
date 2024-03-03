@@ -27,7 +27,7 @@
 
 ## Built With
 
-Typescript, React, React-Howler, React-Router, TailwindCSS, Vite Image Tools, and deployed with Netlify
+Typescript, React, React-Howler, and TailwindCSS.
 
 ## Usage
 
