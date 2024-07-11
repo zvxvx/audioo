@@ -13,7 +13,6 @@ const Audio = ({ url, img, id }: AudioProps) => {
 
   function handlePlaying() {
     setIsPlaying(!isPlaying);
-    !isPlaying ? false : true;
   }
   function changeVolume(e: ChangeEvent<HTMLInputElement>) {
     setVolume(Number(e.target.value));
